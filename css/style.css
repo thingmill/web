@@ -6,7 +6,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 noscript {
@@ -21,7 +21,7 @@ noscript {
 }
 
 .layout-header {
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(48, 48, 48);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -41,6 +41,9 @@ noscript {
 	-ms-flex-align: center;
 	align-items: center;
 	color: white;
+	box-shadow: 1px 1px 5px #000000;
+	margin-top: 1%;
+
 	/*backdrop-filter: blur(5px);*/
 }
 
@@ -129,7 +132,7 @@ noscript {
 
 .layout-header .navigation .links .navigation-link:hover,
 .layout-header .navigation .links .dropdown .dropdown-menu .dropdown-link:hover {
-	background: #0089E5;
+	color : #4db6ac;
 	-webkit-transition: background 0.25s linear;
 	transition: background 0.25s linear;
 }
@@ -203,10 +206,10 @@ noscript {
 		display: none;
 	}
 	.layout-header .navigation .responsive-menu-checkbox:hover ~ .responsive-menu-icon {
-		background: rgba(255, 255, 255, 0.125);
+		background: #4db6ac;
 	}
 	.layout-header .navigation .responsive-menu-checkbox:checked ~ .responsive-menu-icon {
-		background: rgba(255, 255, 255, 0.25);
+		background: #4db6ac;
 	}
 	.layout-header .navigation .responsive-menu-checkbox:checked ~ .links {
 		display: -webkit-box;
@@ -222,7 +225,7 @@ noscript {
 		position: fixed;
 		right: 0;
 		top: 72px;
-		background: rgba(0, 0, 0, 0.75);
+		background: #4db6ac;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: column;
@@ -243,13 +246,20 @@ noscript {
 }
 
 .layout-main .thingmill-logo {
-	max-height: 400px;
+	/*background: url('../happycube_logo.svg') center / contain no-repeat !important;*/
+	margin: 75px auto;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
 	max-width: 1000px;
 	width: 90%;
-	height: 90%;
-	/*background: url('../happycube_logo.svg') center / contain no-repeat !important;*/
-	background: url('../thingmill_logo.png') center / contain no-repeat !important;
-	margin: 75px auto;
+	height: 100%;
+
+	color : white;
+	font-weight: bold;
+	font-size: 55px;
 }
 
 .layout-main .scroll-arrow {
