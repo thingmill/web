@@ -20,6 +20,18 @@ noscript {
 	overflow: hidden;
 }
 
+.avatar{
+	border-radius: 5px;
+}
+
+.name {
+	text-align: center;
+	font-size: 30px;
+}
+.desc  {
+	text-align: center;
+	font-size: 25px;
+}
 .layout-header {
 	background: rgba(48, 48, 48);
 	position: fixed;
@@ -128,6 +140,7 @@ noscript {
 	display: block;
 	text-decoration: none;
 	color: #fff;
+	transition: all 0.5s ease;
 }
 
 .layout-header .navigation .links .navigation-link:hover,
@@ -135,6 +148,7 @@ noscript {
 	color : #4db6ac;
 	-webkit-transition: background 0.25s linear;
 	transition: background 0.25s linear;
+	transition: all 0.5s ease;
 }
 
 .layout-header .navigation .ip {
@@ -261,6 +275,17 @@ noscript {
 	font-weight: bold;
 	font-size: 55px;
 }
+.thingmill img {
+	 -webkit-transition: all 0.3s ease;
+	  -moz-transition: all 0.3s ease;
+		 -ms-transition: all 0.3s ease;
+		  transition: all 0.3s ease;
+			filter: drop-shadow(0 0 5px #303030)
+}
+.thingmill img:hover {
+	transform: scale(1.1);
+	filter: drop-shadow(0 0 9px #303030)
+}
 
 .layout-main .scroll-arrow {
 	position: absolute;
@@ -303,9 +328,7 @@ noscript {
 .layout-scroll a {
 	color: #fff;
 }
-
 .intro-text {
-	background: #111;
 	padding: 15px;
 	margin: 15px;
 	display: inline-block;
@@ -320,9 +343,10 @@ noscript {
 }
 
 .long-text {
+	display: inline-block;
 	width: 500px;
-	margin: auto;
 	text-align: justify;
+	padding: 25px;
 }
 
 .long-text h2 {
@@ -331,8 +355,9 @@ noscript {
 
 hr {
 	width: 500px;
-	border-style: solid;
-	margin: 20px auto;
+	border-width:5px;
+  border-style:dotted;
+	margin: 20px auto
 }
 
 .list {
@@ -364,7 +389,7 @@ hr {
 	text-decoration: none;
 	text-align: left;
 	padding: 10px;
-	background: #161616;
+	background: #303030;
 	margin: 10px;
 	width: 500px;
 	display: -webkit-box;
@@ -379,6 +404,7 @@ hr {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+	border-radius: 10px;
 }
 
 .list.slim > * {
@@ -408,7 +434,12 @@ hr {
 	max-width: 750px;
 	width: 100%;
 }
-
+.project {
+	text-align: center;
+	width : 75px;
+	height: auto;
+	vertical-align:top;
+}
 .quote div {
 	font-size: 10pt;
 	margin: 5px;

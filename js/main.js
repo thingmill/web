@@ -26,6 +26,13 @@ var clipboard = new Clipboard(".ip", {
 	}
 });
 
+$('a[href^="#"]').click(function(){
+    var id = $(this).attr("href");
+    var offset = $(id).offset().top
+    $('html, body').animate({scrollTop: offset}, 'slow');
+    return false;
+});
+
 clipboard.on('success', function (e) {
 	e.trigger.className = e.trigger.className + " copied";
 	setTimeout(function () {
