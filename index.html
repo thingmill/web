@@ -16,7 +16,7 @@
 	<meta property="og:url"  content="https://thingmill.fr">
 	<meta property="og:locale"  content="fr_FR">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:image" content="https://raw.githubusercontent.com/thingmill/artworks/master/ThingMill_Logo.png" />
+	<meta property="og:image" content="https://raw.githubusercontent.com/thingmill/artworks/master/ThingMill_Logo.png"/>
 	<meta name="keywords" content="thingmill, retroboxsp, retro, box, thingmill, retrobox sp, retrobox tech, valentin derouet, etienne chevrollier, matthieu bessat, raspberry pi zero, diy, kit, rpi, rétrobox, " />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Thingmill - A creative corporation">
@@ -26,13 +26,15 @@
 	<meta name="copyright" content="© 2019 thingmill" />
 	<meta name="robots" content="All" />
 	<title>Thingmill - A creative corporation</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/animate.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="icon" href="img/thingmill_solo.png" />
 	<link rel="icon" type="image/png" href="img/thingmill_solo.png" />
 	<link rel="icon" type="image/svg+xml" href="img/thingmill_solo.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Matomo -->
     <script type="text/javascript">
@@ -55,166 +57,201 @@
 
 <body>
 	<header class="layout-header">
-		<a href="/" class="layout-title thingmill"><img src="img/thingmill_logo_white.png"></a>
-		<nav class="navigation">
-			<input type="checkbox" class="responsive-menu-checkbox">
-			<i class="material-icons responsive-menu-icon">menu</i>
-			<div class="links">
-				<a href="#accueil" class="navigation-link">Accueil</a>
-				<a href="#about" class="navigation-link">À propos</a>
-				<a href="#engagements" class="navigation-link">Nos Engagements</a>
-				<a href="#projects" class="navigation-link">Nos Projets</a>
-				<a href="#team" class="navigation-link">Notre Equipe</a>
-			</div>
-		</nav>
+	 <div class="navbar-fixed">
+		<nav>
+	    <div class="nav-wrapper">
+				<div class="row">
+	      <a href="#" class="brand-logo center"><img src="img/thingmill_logo_white.png"></a>
+				<div class="col s6 header-left">
+					<ul id="nav-mobile" class="left hide-on-med-and-down">
+						<li><a href="#accueil" class="navigation-link left-text">Accueil</a></li>
+						<li><a href="#about" class="navigation-link left-text">À propos</a></li>
+						<li><a href="#engagement" class="navigation-link left-text">Nos Engagements</a></li>
+					</ul>
+				</div>
+
+				<div class="col s6 header-right">
+	       <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        	<li><a href="#engagements" class="navigation-link right-text">Nos Engagements</a></li>
+	        	<li><a href="#projects" class="navigation-link right-text">Notre Ambition</a></li>
+	        	<li><a href="#team" class="navigation-link right-text">Notre Equipe</a></li>
+				 </ul>
+				</div>
+	    </div>
+	  </nav>
+	 </div>
 	</header>
+
 	<div id="accueil" class="layout-main">
 		<h1 class="thingmill-logo animated zoomIn">Thingmill, pour un vent de fraicheur</h1>
-		<div class="scroll-arrow wow animated fadeInUp" data-wow-delay="1s">Faîtes défiler la page pour en savoir plus,
-			<br>
-			<i class="material-icons">arrow_downward</i>
-		</div>
 	</div>
+
 	<div id="about" class="layout-scroll">
-		<hr>
-		<div class="intro-text wow fadeIn">
-		Qui sommes nous ?
-		</div>
-		<div class="long-text">
-			<br> Thingmill est une entreprise créée par des lycéens en 2018 par Valentin Derouet, Étienne Chevrollier et Matthieu Bessat, trois amis qui travaille ensemble sur leur temps libre
-		</div>
-			<div class="intro-text wow">
-			Que faisons nous ?
+		<div class="row">
+			<div class="col s6 left-text">
+				<h1>Qui sommes nous ?</h1>
+				<p>Thingmill est une entreprise créée par des lycéens en 2018 par Valentin Derouet, Étienne Chevrollier et Matthieu Bessat, trois amis qui travaille ensemble sur leur temps libre</p>
 			</div>
-		<div class="long-text">
-			<br>Nous inventons, nous créons et nous vendons. Notre but est de créer des objets ou des services jamais vu et qui rendent services.
-		</div>
-		<hr id="engagements">
-		<div class="intro-text wow">
-		Nos engagements
-		</div>
-		<div class="list">
-			<a class="wow flipInX" href="http://retrobox.tech/shop/">
-				<i class="material-icons list-icon">shopping_cart</i>
-				<div>
-					<h1>Des boutiques pratiques et sécurisées</h1>
-					<p>Nos boutiques sont conçus par nos soins et sécurisés par stripe (pour les paiements bancaires) et Paypal.</p>
-				</div>
-			</a>
-			<a class="wow flipInX" href="http://retrobox.tech/shop/">
-				<i class="material-icons list-icon">money_off</i>
-				<div>
-					<h1>Des produits de qualités au meilleurs prix</h1>
-					<p>Nous vendons nos produits au prix juste permettant notre développement sans que vous vous ruiniez</p>
-				</div>
-			</a>
-			<a class="wow flipInX" href="http://retrobox.tech/download/">
-				<i class="material-icons list-icon">phonelink</i>
-				<div>
-					<h1>Des applications pratiques et gratuites</h1>
-					<p>Toutes les applications sont développées par nos soins et disponibles à la fois sur PC/Mac et Android/iOS pour que vous ayez un contrôle total sur nos produits</p>
-				</div>
-			</a>
-			<a class="wow flipInX" href="mailto:contact@thingmill.fr">
-				<i class="material-icons list-icon">question_answer</i>
-				<div>
-					<h1>Une communauté active</h1>
-					<p>Tous nos produits sont dôtés de blogs, forums, serveurs discord pour que ne soyez jamais fustrés par une question sans réponse.</p>
-				</div>
-			</a>
-			<a class="wow flipInX" href="">
-				<i class="material-icons list-icon">lock</i>
-				<div>
-					<h1>Vos données sont sécurisées</h1>
-					<p>Nous nous éfforcons à prendre le moins de données possibles sur vous, touts nos sites respectent la loi RGPD</p>
-				</div>
-			</a>
-			<a class="wow flipInX" href="https://www.youtube.com/channel/UCAq2JoP8-MJNAhvhN-Gu_rg">
-				<i class="material-icons list-icon">video_library</i>
-				<div>
-					<h1>Des chaînes YouTube</h1>
-					<p>Tous nos produits sont présentés dans des vidéos explicatives au cas où vous ne compreniez pas nos projets</p>
-				</div>
-			</a>
-			<a class="wow flipInX">
-				<i class="material-icons list-icon">more_horiz</i>
-				<div>
-					<h1>Et bien plus encore</h1>
-				</div>
-			</a>
-		</div>
-
-		<hr id="projects">
-		<h1>Nos Projets</h1>
-		<div class="wow bounceIn quote">
-		<img alt="" class="project" src="img/retrobox.png" />
-		La Retrobox
-			<div>La retrobox est une console portative, open-source qui tourne sur RetroPie, et vous pouvez rejouer à tous les jeux de votre enfance, avec son autonomie de 6 heures vous allez passer des heures de plaisirs ! Projet en cours de construction, il sera mis en vente: début 2019. Le projet avance très vite et un prototype est déjà disponible --> Pour toutes autres infos : le site de <a href="https:/retrobox.tech/">RetroBox</a> </div>
-		</div>
-		<div class="wow bounceIn quote">
-		<img alt="" class="project" src="img/happyblocks.png" />
-			HappyBlocks
-			<div>
-
-HappyBlocks est un serveur mini-jeux pour le jeu Minecraft, où vous pouvez vous divertir avec d’autres personnes en jouant à divers Mini-jeux. Nous nous renouvelons sans cesse pour avoir des jeux originaux et de qualité et nous voulons sans cesse nous améliorer c’est pour cela que nous avons besoin de vos avis !
-
-Et comme vous pouvez jouer avec d’autres personnes, ou avec vos amis, vous n’êtes jamais vraiment seul, la convivialité est garantie !
-
-Mais bien sûr, il existe des jeux qui peuvent êtres joués seuls, donc vous avez toujours la possibilité de vous amuser sur HappyBlocks.
-
-Le site : <a href="http://happyblocks.info/">Happyblocks.info</a>
-</div>
-		</div>
-		<div class="wow bounceIn quote">
-			A venir
-			<div>L'idée arrivera bientôt...</div>
-		</div>
-<hr id="team">
-
-<div class="intro-text wow">
-Notre équipe
-</div>
-		<div class="list slim">
-			<div class="wow flipInX">
-				<img alt="" class="avatar" src="img/valentin.png" />
-				<h1 class="name">Valentin Derouet</h1>
-				<p class="desc">16 ans, concepteur électronique et dev web</p>
-			</div>
-			<div class="wow flipInX">
-				<img alt="" class="avatar" src="img/etienne.jpg" />
-				<h1 class="name">Etienne Chevrollier</h1>
-				<p class="desc">16 ans, infographiste et idéaliste</p>
-			</div>
-			<div class="wow flipInX">
-				<img alt="" class="avatar" src="img/matthieu.jpg" />
-				<h1 class="name">Matthieu Bessat</h1>
-				<p class="desc">16 ans, développeur web full stack, php, js</p>
+			<div class="col s6 right-text">
+				<h1>Que faisons nous ?</h1>
+				<p>Nous inventons, nous créons et nous vendons. Notre but est de créer des objets ou des services jamais vu et qui rendent services.</p>
 			</div>
 		</div>
-		<div class="wow bounceIn quote">
-			<div></div>Si vous avez des questions <a href="mailto:contact@thingmill.fr">envoyez nous un e-mail !</a>
-		</div>
-		<hr>
-		<div class="slider noscript" onclick="changeDiapo(this);" id="diapo">
-			<img alt="" class="photo" src="https://static.retrobox.tech/img/about/conventionalain1.jpg" />
-			<img alt="" class="photo" src="https://static.retrobox.tech/img/about/about2.png" />
-			<img alt="" class="photo" src="https://static.retrobox.tech/img/about/thingmill.jpg" />
-			<img alt="" class="photo" src="https://static.retrobox.tech/img/about/about1.png" />
-			<img alt="" class="photo" src="https://static.retrobox.tech/img/about/about3.png" />
-			<p>Cliquez pour faire défiler les photos
-				<noscript>
-					Javascript doit être activé pour que le diaporama fonctionne
-				</noscript>
-			</p>
-		</div>
-		<hr>
-
 	</div>
-	<div class="copyrights">&copy; Thingmill 2019 - RCS 844 190 363 Alençon - L'utilisation de tout materiel respecte les droits d'auteurs et sont tous utilisés sous un usage juste et légale</div>
+
+	<div class="container">
+    <div class="section">
+			<h1 class="title">Nos engagements</h1>
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center icon-one"><i class="material-icons">shopping_cart</i></h2>
+						<h5 class="center">Des boutiques pratiques et sécurisées</h5>
+
+						<p class="light center">Nos boutiques sont conçus par nos soins et sécurisés par stripe (pour les paiements bancaires) et Paypal.</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center icon-two"><i class="material-icons">money_off</i></h2>
+						<h5 class="center">Vos données sont sécurisées</h5>
+
+						<p class="light center">Nous vendons nos produits au prix juste permettant notre développement sans que vous vous ruiniez</p>
+					</div>
+				</div>
+
+		<div class="col s12 m4">
+			<div class="icon-block">
+				<h2 class="center icon-one"><i class="material-icons">phonelink</i></h2>
+				<h5 class="center">Des applications pratiques et gratuites</h5>
+
+				<p class="light center">Toutes les applications sont développées par nos soins et disponibles à la fois sur PC/Mac et Android/iOS pour que vous ayez un contrôle total sur nos produits</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col s12 m4">
+			<div class="icon-block">
+				<h2 class="center icon-two"><i class="material-icons">question_answer</i></h2>
+				<h5 class="center">Une communauté active</h5>
+
+				<p class="light center">Tous nos produits sont dôtés de blogs, forums, serveurs discord pour que ne soyez jamais fustrés par une question sans réponse.</p>
+			</div>
+		</div>
+
+		<div class="col s12 m4">
+			<div class="icon-block">
+				<h2 class="center icon-one"><i class="material-icons">lock</i></h2>
+				<h5 class="center">Vos données sont sécurisées</h5>
+
+				<p class="light center">Nous nous éfforcons à prendre le moins de données possibles sur vous, touts nos sites respectent la loi RGPD</p>
+			</div>
+		</div>
+
+		<div class="col s12 m4">
+			<div class="icon-block">
+				<h2 class="center"><i class="material-icons">video_library</i></h2>
+				<h5 class="center">Des chaînes YouTube</h5>
+
+				<p class="light center">Tous nos produits sont présentés dans des vidéos explicatives au cas où vous ne compreniez pas nos projets</p>
+			</div>
+		</div>
+	 </div>
+ </div>
+
+<div class="section">
+	<h1 class="title">Nos Projets</h1>
+
+		<div class="row project">
+			<div class="col s6">
+				<img alt="" class="project-img right" src="img/background.png"/>
+			</div>
+			<div class="col s6">
+				<h1 class="retrobox title-project">Projet Retrobox</h1>
+				<p>Une console, 20 ans de jeux, 35 ans de technologies</p>
+				<p class="desc-project">La retrobox est une console portative, open-source qui tourne sur RetroPie, et vous pouvez rejouer à tous les jeux de votre enfance, avec son autonomie de 6 heures vous allez passer des heures de plaisirs ! Projet en cours de construction, il sera mis en vente: début 2019. Le projet avance très vite et un prototype est déjà disponible</p>
+				<p class="retrobox">En apprendre plus sur le projet <i class="material-icons arrow">keyboard_arrow_right</i> </p>
+
+				<div>
+  			<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #3B5998"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #00ACED"><i class="fab fa-twitter"></i></a>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #171516"><i class="fab fa-github"></i></a>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #7289da"><i class="fab fa-discord"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row project">
+			<div class="col s6">
+				<div class="text-left">
+				<h1 class="happyblocks title-project">Projet HappyBlocks</h1>
+				<p>Serveurs Minecraft disposant de nombreux jeux !</p>
+				<p class="desc-project">HappyBlocks est un serveur mini-jeux pour le jeu Minecraft, où vous pouvez vous divertir avec d’autres personnes en jouant à divers Mini-jeux. Nous nous renouvelons sans cesse pour avoir des jeux originaux et de qualité et nous voulons sans cesse nous améliorer c’est pour cela que nous avons besoin de vos avis !</p>
+				<p class="happyblocks">En apprendre plus sur le projet <i class="material-icons arrow">keyboard_arrow_right</i> </p>
+				<div>
+  			<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #3B5998"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #00ACED"><i class="fab fa-twitter"></i></a>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #171516"><i class="fab fa-github"></i></a>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #7289da"><i class="fab fa-discord"></i></a>
+				</div>
+			</div>
+			</div>
+			<div class="col s6">
+				<img alt="" class="project-img" src="img/background.png"/>
+			</div>
+		</div>
+
+		<div class="row project">
+			<div class="col s6">
+				<img alt="" class="project-img right" src="img/background.png"/>
+			</div>
+			<div class="col s6">
+				<h1 class="domotique title-project">Projet domotique</h1>
+				<p>Une console, 20 ans de jeux, 35 ans de technologies</p>
+				<p class="desc-project">La retrobox est une console portative, open-source qui tourne sur RetroPie, et vous pouvez rejouer à tous les jeux de votre enfance, avec son autonomie de 6 heures vous allez passer des heures de plaisirs ! Projet en cours de construction, il sera mis en vente: début 2019. Le projet avance très vite et un prototype est déjà disponible</p>
+				<p class="domotique">En apprendre plus sur le projet <i class="material-icons arrow">keyboard_arrow_right</i> </p>
+
+				<div>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #3B5998"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #00ACED"><i class="fab fa-twitter"></i></a>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #171516"><i class="fab fa-github"></i></a>
+				<a class="btn-floating btn waves-effect waves-light media-icon" style="background: #7289da"><i class="fab fa-discord"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<h1 class="title new-section">Notre équipe</h1>
+
+		<div class="row center">
+			 <div class="col s4">
+				 <img alt="" class="avatar" src="img/valentin.png"/>
+			 	 <h1 class="name">Valentin Derouet</h1>
+			 	 <p class="desc center">16 ans, concepteur électronique et dev web</p>
+			 </div>
+			 <div class="col s4">
+				 <img alt="" class="avatar" src="img/etienne.jpg"/>
+			 	 <h1 class="name">Etienne Chevrollier</h1>
+			 	 <p class="desc center">16 ans, infographiste et idéaliste</p>
+			 </div>
+			 <div class="col s4">
+				 <img alt="" class="avatar" src="img/matthieu.jpg"/>
+			 	 <h1 class="name">Matthieu Bessat</h1>
+			 	 <p class="desc center">16 ans, développeur web full stack, php, js</p>
+			 </div>
+	</div>
+</div>
+</div>
+	<div class="footer">Thingmill 2019 - RCS 844 190 363 Alençon - L'utilisation de tout materiel respecte les droits d'auteurs et sont tous utilisés sous un usage juste et légale</div>
+
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
 	<script type="text/javascript" src="js/flexibility.js"></script>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script type="text/javascript">
 		new WOW().init();
 	</script>
