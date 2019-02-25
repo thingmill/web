@@ -29,6 +29,9 @@ body {
 	text-align: right;
 }
 
+.height {
+	height: 25em;
+}
 .new-section {
 	margin-top: 1em;
 }
@@ -38,6 +41,7 @@ body {
 
 .title {
 	text-align: center;
+	margin-bottom: 1.5em;
 }
 
 .icon-one {
@@ -47,7 +51,9 @@ body {
 .icon-two {
 	color: #f6f6f6;
 }
-
+.larger {
+	font-size: smaller;
+}
 .project {
 	margin-top: 5em;
 }
@@ -95,4 +101,103 @@ body {
 }
 .domotique {
 	color: #9575cd;
+}
+
+/* ==================================================
+   Contact Section
+================================================== */
+
+.contact-mail {
+	color: #4db6ac;
+}
+
+.contact-details h3 {
+	color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 30px;
+	line-height: 1em;
+    text-transform: uppercase;
+}
+
+.contact-details ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.contact-details ul li {
+	margin: 0 0 20px;
+	line-height: 28px;
+	padding: 0;
+}
+
+#contact-form {
+	margin-bottom: 0;
+}
+
+#contact-form p {
+	margin-bottom: 1px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    color: #f6f6f6;
+    font-size: 16px;
+    height: auto;
+    padding: 15px;
+	margin: 0;
+
+    resize: none;
+}
+
+#contact-form input {
+    width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+#contact-form textarea:focus {
+	border: 2px solid #4db6ac;
+}
+
+#contact-form textarea {
+    width: 100%;
+	resize: vertical;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  border-radius: 4px;
+}
+
+#contact-form .submit {
+    color: #f6f6f6;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 16px 40px;
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+	  margin-top: 30px;
+		border: 1px solid #d1d1d1;
+		border-radius: 4px;
+
+	-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+	   -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+		 -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+		    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+
+#contact-form .submit:hover {
+    color: #4db6ac;
+		border: 1px solid #4db6ac;
+}
+
+#response {
+	margin-top: 20px;
+	color: #FFFFFF;
 }

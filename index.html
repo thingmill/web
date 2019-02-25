@@ -88,11 +88,11 @@
 
 	<div id="about" class="layout-scroll">
 		<div class="row">
-			<div class="col s6 left-text">
+			<div class="col s6 left-text height">
 				<h1>Qui sommes nous ?</h1>
 				<p>Thingmill est une entreprise créée par des lycéens en 2018 par Valentin Derouet, Étienne Chevrollier et Matthieu Bessat, trois amis qui travaille ensemble sur leur temps libre</p>
 			</div>
-			<div class="col s6 right-text">
+			<div class="col s6 right-text height" style="padding-top: 10em;">
 				<h1>Que faisons nous ?</h1>
 				<p>Nous inventons, nous créons et nous vendons. Notre but est de créer des objets ou des services jamais vu et qui rendent services.</p>
 			</div>
@@ -105,7 +105,7 @@
 			<div class="row">
 				<div class="col s12 m4">
 					<div class="icon-block">
-						<h2 class="center icon-one"><i class="material-icons">shopping_cart</i></h2>
+						<h2 class="center icon-one"><i class="material-icons larger">shopping_cart</i></h2>
 						<h5 class="center">Des boutiques pratiques et sécurisées</h5>
 
 						<p class="light center">Nos boutiques sont conçus par nos soins et sécurisés par stripe (pour les paiements bancaires) et Paypal.</p>
@@ -114,7 +114,7 @@
 
 				<div class="col s12 m4">
 					<div class="icon-block">
-						<h2 class="center icon-two"><i class="material-icons">money_off</i></h2>
+						<h2 class="center icon-two"><i class="material-icons larger">money_off</i></h2>
 						<h5 class="center">Vos données sont sécurisées</h5>
 
 						<p class="light center">Nous vendons nos produits au prix juste permettant notre développement sans que vous vous ruiniez</p>
@@ -123,7 +123,7 @@
 
 		<div class="col s12 m4">
 			<div class="icon-block">
-				<h2 class="center icon-one"><i class="material-icons">phonelink</i></h2>
+				<h2 class="center icon-one"><i class="material-icons larger">phonelink</i></h2>
 				<h5 class="center">Des applications pratiques et gratuites</h5>
 
 				<p class="light center">Toutes les applications sont développées par nos soins et disponibles à la fois sur PC/Mac et Android/iOS pour que vous ayez un contrôle total sur nos produits</p>
@@ -134,7 +134,7 @@
 	<div class="row">
 		<div class="col s12 m4">
 			<div class="icon-block">
-				<h2 class="center icon-two"><i class="material-icons">question_answer</i></h2>
+				<h2 class="center icon-two"><i class="material-icons larger">question_answer</i></h2>
 				<h5 class="center">Une communauté active</h5>
 
 				<p class="light center">Tous nos produits sont dôtés de blogs, forums, serveurs discord pour que ne soyez jamais fustrés par une question sans réponse.</p>
@@ -143,7 +143,7 @@
 
 		<div class="col s12 m4">
 			<div class="icon-block">
-				<h2 class="center icon-one"><i class="material-icons">lock</i></h2>
+				<h2 class="center icon-one"><i class="material-icons larger">lock</i></h2>
 				<h5 class="center">Vos données sont sécurisées</h5>
 
 				<p class="light center">Nous nous éfforcons à prendre le moins de données possibles sur vous, touts nos sites respectent la loi RGPD</p>
@@ -152,7 +152,7 @@
 
 		<div class="col s12 m4">
 			<div class="icon-block">
-				<h2 class="center"><i class="material-icons">video_library</i></h2>
+				<h2 class="center"><i class="material-icons larger">video_library</i></h2>
 				<h5 class="center">Des chaînes YouTube</h5>
 
 				<p class="light center">Tous nos produits sont présentés dans des vidéos explicatives au cas où vous ne compreniez pas nos projets</p>
@@ -244,8 +244,78 @@
 			 </div>
 	</div>
 </div>
+
+<!-- Contact Form -->
+<div class="section">
+	<h1 class="title new-section">Contactez-nous !</h1>
+<div class="row">
+	<div class="col s9">
+			<form id="contact-form" class="contact-form" action="#">
+					<p class="contact-name">
+						<input id="contact_name" type="text" placeholder="Nom" value="" name="name" />
+						</p>
+						<p class="contact-email">
+							<input id="contact_email" type="text" placeholder="Adresse mail" value="" name="email" />
+						</p>
+						<p class="contact-message">
+							<textarea id="contact_message" placeholder="Votre Message" name="message" rows="15" cols="40"></textarea>
+						</p>
+						<p class="contact-submit">
+							<a id="contact-submit" class="submit" href="#">Envoyez un mail</a>
+						</p>
+
+						<div id="response">
+
+						</div>
+				</form>
+
+		</div>
+
+		<div class="col s3">
+			<div class="contact-details">
+				<h3>Nos informations de contact</h3>
+						<ul>
+								<li><a class="contact-mail" href="#">contact@thingmill.fr</a></li>
+								<li>06 36 36 36 36</li>
+								<li>
+										Thingmill
+										<br>
+										Hesloup
+										<br>
+										Unknow
+								</li>
+						</ul>
+				</div>
+		</div>
 </div>
-	<div class="footer">Thingmill 2019 - RCS 844 190 363 Alençon - L'utilisation de tout materiel respecte les droits d'auteurs et sont tous utilisés sous un usage juste et légale</div>
+<!-- End Contact Form -->
+</div>
+
+</div>
+<footer class="page-footer teal lighten-1">
+	<div class="container">
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">Footer</h5>
+				<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+				<h5 class="white-text">Lien</h5>
+				<ul>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+		Thingmill 2019 - RCS 844 190 363 Alençon - L'utilisation de tout materiel respecte les droits d'auteurs et sont tous utilisés sous un usage juste et légale
+		</div>
+	</div>
+</footer>
 
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
