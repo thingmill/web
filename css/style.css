@@ -37,6 +37,7 @@ body {
 }
 .layout-main {
 	background: url("../img/background.png");
+	min-height: 90vh;
 }
 
 .title {
@@ -170,6 +171,7 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
   border-radius: 4px;
+
 }
 
 #contact-form .submit {
