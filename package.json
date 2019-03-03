@@ -21,8 +21,14 @@
   },
   "homepage": "https://github.com/thingmill/web#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "showdown": "^1.9.0"
+    "morgan": "latest",
+    "nodemon": "^1.18.10",
+    "nodemailer": "latest",
+    "nodemailer-mailgun-transport": "latest",
+    "nconf": "latest",
+    "request": "^2.88.0"
   }
 }
