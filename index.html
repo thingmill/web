@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html>
    <head>
@@ -36,6 +34,8 @@
       <link rel="icon" type="image/png" href="img/ThingMill Logo.png" />
       <link rel="icon" type="image/svg+xml" href="img/ThingMill Logo.png" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <html lang="fr" dir="ltr">
+
       <!-- Matomo -->
       <script type="text/javascript">
          var _paq = _paq || [];
@@ -54,6 +54,18 @@
          <p><img src="//analytics.thingmill.fr/piwik.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
       <!-- End Matomo Code -->
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+      <script type="text/javascript" src="js/lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+      <script type="text/javascript" src="js/lib/jquery.i18n/jquery.i18n.js"></script>
+      <script type="text/javascript" src="js/lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+      <script type="text/javascript" src="js/lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+      <script type="text/javascript" src="js/lib/jquery.i18n/jquery.i18n.language.js"></script>
+      <script type="text/javascript" src="js/lib/jquery.i18n/jquery.i18n.parser.js"></script>
+      <script type="text/javascript" src="js/lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+      <script type="text/javascript" src="js/lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+
    </head>
    <body>
       <header class="layout-header">
@@ -74,6 +86,10 @@
                            <li><a href="#engagements" class="navigation-link right-text">Nos Activités</a></li>
                            <li><a href="#projects" class="navigation-link right-text">Notre Ambition</a></li>
                            <li><a href="#team" class="navigation-link right-text">Notre Equipe</a></li>
+                           <ul class="switch-locale">
+     <li><a href="#" data-locale="en">Français</a></li>
+     <li><a href="#" data-locale="ru">Anglais</a></li>
+   </ul>
                         </ul>
                      </div>
                   </div>
@@ -83,16 +99,15 @@
       </header>
       <div id="accueil" class="layout-main">
 				<div class="section home">
-								<h1 class="home">Imaginer, innover et réaliser</h1>
+								<h1 data-i18n="home-section-title" class="home">Imaginer, innover et réaliser</h1>
 								<p class="home-desc">Thingmill, pour un vent de fraicheur</p>
 									<p class="contact-submit">
-										<a id="contact-submit" class="submit button-left" href="#">En savoir plus</a>
+										<a class="button-left" href="#">En savoir plus</a>
 									</p>
 									<p class="contact-submit">
-										<a id="contact-submit" class="submit button-right" href="#">Acheter nos produits</a>
+										<a class="button-right" href="#">Acheter nos produits</a>
 									</p>
-            </div>
-         </div>
+        </div>
       </div>
       <div id="about" class="layout-scroll">
          <div class="row">
@@ -161,7 +176,7 @@
             <div class="row project right">
                <div class="col s6">
                   <img alt="" class="project-img right" src="img/background.png"/>
-                  <!--<iframe src="http://retrobox.tech" scrolling="no" width= "100%" border-radius= "1em" frameBorder="0">Browser not compatible.</iframe>-->
+                  <!--<iframe src="https://retrobox.tech" scrolling="no" width= "100%" border-radius= "1em" frameBorder="0">Browser not compatible.</iframe>-->
                </div>
                <div class="col s6">
                   <h1 class="retrobox title-project">Projet Retrobox</h1>
@@ -369,10 +384,9 @@
       <script type="text/javascript" src="js/flexibility.js"></script>
       <script type="text/javascript" src="js/validator.js"></script>
       <script type="text/javascript" src="js/contact.js"></script>
-      <script src='https://www.google.com/recaptcha/api.js'></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
+      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <script type="text/javascript">
          new WOW().init();
       </script>

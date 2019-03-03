@@ -33,6 +33,23 @@ $('a[href^="#"]').click(function(){
     return false;
 });
 
+jQuery(function($) {
+			// ...
+		$.i18n().load( {
+			'en': './locales/en.json',
+			'fr': './locales/fr.json'
+		} ).done(function() {
+				$('.switch-locale').on('click', 'a', function(e) {
+					e.preventDefault();
+					$.i18n().locale = $(this).data('locale');
+				});
+			});
+	});
+
+$.i18n( {
+		locale: 'fr'
+} );
+
 clipboard.on('success', function (e) {
 	e.trigger.className = e.trigger.className + " copied";
 	setTimeout(function () {
