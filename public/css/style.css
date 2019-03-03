@@ -128,6 +128,10 @@ body {
 	width: 30em;
 }
 
+.slider {
+	height: 200px;
+	border-radius: 2em;
+}
 .arrow {
 	vertical-align: middle;
 	font-size: 2.5em;
@@ -243,4 +247,31 @@ body {
 #response {
 	margin-top: 20px;
 	color: #FFFFFF;
+}
+
+.markdown {
+}
+
+.markdown h3 {
+	text-align: center;
+	padding-top: 0.5em;
+}
+
+
+.markdown h4 {
+	font-size: 1.75em;
+	border-bottom: 1px solid #f6f6f6;
+	padding-bottom: 0.5em;
+	margin-left: 2.5em;
+	padding-top: 1em;
+}
+
+.markdown p {
+	font-family: 'Fira Sans';
+	padding-left: 4em;
+}
+
+.markdown hr {
+		border-bottom: 2px solid #f6f6f6;
+		padding-left: 0em;
 }
