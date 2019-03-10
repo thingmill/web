@@ -2,4 +2,3 @@ node_modules/*
 .env
 access.log
 config.json
-package-lock.json
