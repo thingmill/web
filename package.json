@@ -4,7 +4,8 @@
   "description": "The thingmill.fr web site.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/nodemon"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,15 @@
   "homepage": "https://github.com/thingmill/web#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "morgan": "latest",
-    "nodemon": "^1.18.10",
+    "nconf": "latest",
     "nodemailer": "latest",
     "nodemailer-mailgun-transport": "latest",
-    "nconf": "latest",
+    "nodemon": "^1.18.10",
     "request": "^2.88.0"
   }
 }

@@ -7,7 +7,16 @@ body {
 .home {
 	text-align: center;
 }
- .home-desc {
+
+.section.home {
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-desc {
 	font-size: 2em;
 	text-align: center;
 }
@@ -83,7 +92,7 @@ body {
 
 .title {
 	text-align: center;
-	margin-bottom: 1.5em;
+	margin-bottom: .5em;
 }
 
 .icon-one {
@@ -100,7 +109,7 @@ body {
 	margin-top: 5em;
 }
 .project-img {
-	width: 40em;
+	width: 100%;
 	border-radius: 1em;
 }
 
@@ -125,7 +134,7 @@ body {
 }
 
 .desc-project {
-	width: 30em;
+	width: 100%;
 }
 
 .slider {
@@ -152,6 +161,10 @@ body {
 /* ==================================================
    Contact Section
 ================================================== */
+
+#contact-submit {
+	background-color: #4db6ac;
+}
 
 .contact-mail {
 	color: #4db6ac;
@@ -220,7 +233,7 @@ body {
 }
 
 #contact-form .submit {
-    color: #f6f6f6;
+    color: #FFF;
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -228,20 +241,21 @@ body {
     padding: 16px 40px;
     text-align: center;
     vertical-align: middle;
+    border: 1px solid #4db6ac;
     width: auto;
 	  margin-top: 30px;
-		border: 1px solid #d1d1d1;
 		border-radius: 4px;
 
 	-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;
 	   -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
 		 -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
-		    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+			transition: background 0.1s linear 0s, color 0.1s linear 0s;
+	transition: 0.2s opacity;
 }
 
 #contact-form .submit:hover {
-    color: #4db6ac;
-		border: 1px solid #4db6ac;
+	opacity: 0.8;
+	transition: 0.2s opacity;
 }
 
 #response {
@@ -275,3 +289,4 @@ body {
 		border-bottom: 2px solid #f6f6f6;
 		padding-left: 0em;
 }
+
