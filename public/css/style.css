@@ -21,14 +21,16 @@ body {
 	text-align: center;
 }
 
-.button-left {
-	margin-left: 15em;
-	float: left;
+.home-actions-button {
+	margin-top: 2.5em;
+	display: flex;
+	justify-content: space-between;
 }
-.button-right {
-	margin-right: 15em;
-	float: right;
+
+.home-actions-button p:first-of-type {
+	margin-right: 4em;
 }
+
 .submit {
     color: #f6f6f6;
     cursor: pointer;

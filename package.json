@@ -22,16 +22,22 @@
   },
   "homepage": "https://github.com/thingmill/web#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "gravatar": "^1.8.0",
+    "hookcord": "^2.0.1",
     "morgan": "latest",
     "nconf": "latest",
     "nodemailer": "latest",
     "nodemailer-mailgun-transport": "latest",
     "nodemon": "^1.18.10",
+    "querystring": "^0.2.0",
+    "recaptcha": "^1.2.1",
     "request": "^2.88.0"
   }
 }
