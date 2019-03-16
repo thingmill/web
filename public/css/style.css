@@ -258,3 +258,320 @@ body {
 	margin-top: 20px;
 	color: #FFFFFF;
 }
+
+.markdown {
+}
+
+.markdown h3 {
+	text-align: center;
+	padding-top: 0.5em;
+}
+
+
+.markdown h4 {
+	font-size: 1.75em;
+	border-bottom: 1px solid #f6f6f6;
+	padding-bottom: 0.5em;
+	margin-left: 2.5em;
+	padding-top: 1em;
+}
+
+.markdown p {
+	font-family: 'Fira Sans';
+	padding-left: 4em;
+}
+
+.markdown hr {
+		border-bottom: 2px solid #f6f6f6;
+		padding-left: 0em;
+}
+
+.devis {
+    color: #48486a;
+}
+
+.devis:hover {
+    color: #ffb005;
+}
+.call-to-action-bg {
+  position: relative;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
+	color: #48486A
+}
+.call-to-action-bg:before {
+  position: absolute;
+  content: url("../img/geometric_pattern_violet.png");
+  top: -80%;
+  left: -400px;
+  margin-top: -65px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+.call-to-action-bg:after {
+  position: absolute;
+  content: url("../img/geometric_pattern_violet.png");
+  top: -80%;
+  margin-top: -50px;
+  right: -1380px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.call-to-action {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.call-to-action h1{
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 35px;
+  margin-right: 30px;
+  text-align: right;
+}
+.call-to-action h2{
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 35px;
+  margin-right: 25px;
+  text-align: left;
+}
+.call-to-action h3{
+  font-size: 6rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 35px;
+  margin-right: 30px;
+  text-align: right;
+}
+
+.call-to-action h4{
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 35px;
+  margin-right: 30px;
+  text-align: right;
+}
+
+.call-to-action h6{
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 35px;
+  padding-top: 25px;
+  text-align: left;
+}
+
+.call-to-action a{
+  font-size: 1.0rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 35px;
+  float: left;
+}
+
+.call-to-action a:hover {
+    color: #FFB005;
+    transition-duration: 0.4s;
+}
+
+@media all and (max-width: 767px) {
+  .call-to-action-form form {
+    text-align: center;
+  }
+  .call-to-action-form form .form-group {
+    width: 100%;
+  }
+  .call-to-action-form form .form-group .form-control {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .call-to-action-form form .button {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 767px) {
+  .call-to-action-form form .form-group {
+    margin-bottom: 0;
+  }
+}
+.case-study-bg {
+  position: relative;
+}
+.case-study-bg:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 115px;
+  background: #0083ff;
+}
+
+.case-study, .portfolio {
+  margin-bottom: 10px;
+}
+
+.case-study:hover .thumb img, .portfolio:hover .thumb img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.case-study:hover .body h5, .portfolio:hover .body h5 {
+    color: #FFB005;
+}
+
+.case-study .thumb, .portfolio .thumb {
+  overflow: hidden;
+  display: block;
+}
+
+.case-study .thumb img, .portfolio .thumb img {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 100% !important;
+}
+
+.case-study .body, .portfolio .body {
+  background: #ffffff;
+  padding: 15px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.case-study .body h5, .portfolio .body h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #16334e;
+}
+
+.case-study .body p, .portfolio .body p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.case-study .body .favourite, .portfolio .body .favourite {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 1.8rem;
+}
+
+.case-study .body .favourite:hover i, .portfolio .body .favourite:hover i {
+  color: #0083ff;
+}
+
+.case-study .body .favourite i, .portfolio .body .favourite i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.case-study-slider .owl-nav button.owl-next, .case-study-slider .owl-nav button.owl-prev {
+  position: absolute;
+  bottom: 55px;
+  font-size: 2.2rem;
+  outline: none;
+}
+.case-study-slider .owl-nav button.owl-next {
+  right: -55px;
+}
+.case-study-slider .owl-nav button.owl-prev {
+  left: -55px;
+}
+.case-study-slider .owl-dots {
+  text-align: center;
+}
+.case-study-slider .owl-dots button.owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #aaaaaa;
+  outline: none;
+  display: inline-block;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  margin: 0 3px;
+}
+.case-study-slider .owl-dots button.owl-dot.active {
+  background: #FFB005;
+}
+
+.case-study-info {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin: 30px auto 0;
+}
+.case-study-info .increase, .case-study-info .total {
+  padding: 20px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.case-study-info .increase h4, .case-study-info .total h4 {
+  font-size: 3.6rem;
+  line-height: 1;
+}
+.case-study-info .increase span, .case-study-info .total span {
+  font-size: 1.5rem;
+}
+.case-study-info .increase {
+  background: #0083ff;
+  color: #ffffff;
+}
+.case-study-info .total {
+  color: #16334e;
+  background: #f8fcff;
+}
+
+@media all and (max-width: 1199px) {
+  .case-study-slider .owl-nav button.owl-next {
+    right: -30px;
+  }
+  .case-study-slider .owl-nav button.owl-prev {
+    left: -30px;
+  }
+}
+@media all and (max-width: 767px) {
+  .case-study-info .increase h4, .case-study-info .total h4 {
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+}
+@media all and (max-width: 599px) {
+  .case-study-slider {
+    padding-bottom: 40px;
+  }
+  .case-study-slider .owl-nav button.owl-next, .case-study-slider .owl-nav button.owl-prev {
+    bottom: 0;
+    left: 50%;
+  }
+  .case-study-slider .owl-nav button.owl-next {
+    margin-left: 8px;
+  }
+  .case-study-slider .owl-nav button.owl-prev {
+    margin-left: -30px;
+  }
+
+  .case-study-bg:before {
+    bottom: 155px;
+  }
+}

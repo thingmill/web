@@ -49,7 +49,15 @@ app.get('/terms-and-conditions', function (req, res) {
     res.render('legal/terms-and-conditions');
 });
 
-app.get('/404', function (req, res) {
+app.get('/activities', function (req, res) {
+    res.render('activities');
+});
+
+app.get('/projects', function (req, res) {
+    res.render('projects');
+});
+
+app.get('*', function (req, res) {
     res.render('errors/404');
 });
 
