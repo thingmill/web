@@ -57,17 +57,11 @@ body {
 
 .header-left {
 	background: #4db6ac;
-	color: #f6f6f6;
-	border-bottom-style : solid;
-	border-bottom-color : #f6f6f6;
-	border-bottom-width: 2px;
+
 }
 .header-right {
 	background: #f6f6f6;
-	color: #4db6ac;
-	border-bottom-style : solid;
-	border-bottom-color : #4db6ac;
-	border-bottom-width: 2px;
+
 }
 
 .left-text {
@@ -264,31 +258,3 @@ body {
 	margin-top: 20px;
 	color: #FFFFFF;
 }
-
-.markdown {
-}
-
-.markdown h3 {
-	text-align: center;
-	padding-top: 0.5em;
-}
-
-
-.markdown h4 {
-	font-size: 1.75em;
-	border-bottom: 1px solid #f6f6f6;
-	padding-bottom: 0.5em;
-	margin-left: 2.5em;
-	padding-top: 1em;
-}
-
-.markdown p {
-	font-family: 'Fira Sans';
-	padding-left: 4em;
-}
-
-.markdown hr {
-		border-bottom: 2px solid #f6f6f6;
-		padding-left: 0em;
-}
-

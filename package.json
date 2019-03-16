@@ -36,6 +36,7 @@
     "nodemailer": "latest",
     "nodemailer-mailgun-transport": "latest",
     "nodemon": "^1.18.10",
+    "owl.carousel": "^2.3.4",
     "querystring": "^0.2.0",
     "recaptcha": "^1.2.1",
     "request": "^2.88.0"
