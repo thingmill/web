@@ -1,0 +1,45 @@
+{
+  "name": "thingmill-web",
+  "version": "1.0.0",
+  "description": "The thingmill.fr web site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/nodemon",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thingmill/web.git"
+  },
+  "keywords": [
+    "thingmill",
+    "retrobox"
+  ],
+  "author": "Thingmill Corp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thingmill/web/issues"
+  },
+  "homepage": "https://github.com/thingmill/web#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "gravatar": "^1.8.0",
+    "hookcord": "^2.0.1",
+    "morgan": "latest",
+    "nconf": "latest",
+    "nodemailer": "latest",
+    "nodemailer-mailgun-transport": "latest",
+    "nodemon": "^1.18.10",
+    "owl.carousel": "^2.3.4",
+    "querystring": "^0.2.0",
+    "recaptcha": "^1.2.1",
+    "request": "^2.88.0"
+  }
+}

@@ -1,0 +1,78 @@
+<% include ../header %>
+    <div class="container">
+        <h1>Reporter un abus</h1>
+        <div class="col s12 m9">
+            <form id="contact-form" role="form" v-on:submit.prevent="submit">
+                <h6>Votre adresse mail <span class="required">*</span></h6>
+                <p class="contact-email">
+                    <input id="contact_email" name="email" type="email" placeholder="Votre email" required="required" v-model="email" minlength="4" maxlength="200">
+                </p>
+                <h6>Quel type de rapport voulez-vous faire ? <span class="required">*</span></h6>
+                <select required id="reason" style="width: 100%;" name="reason">
+                    <option selected disabled>Sélectionnez...</option>
+                    <option value="higt">Copyright</option>
+                    <option value="median">Contrefaçon</option>
+                    <option value="higest">Anti-sémitisme, pornographie, racisme, incitation à la haine, terrorisme</option>
+                    <option value="low">Autre</option>
+                </select>
+                <h6>Entrez les ur(s) en question <span class="required">*</span></h6>
+                <p class="contact-url">
+                    <textarea id="inputurl" name="url" type="text" placeholder="Entrez les url(s) en question (Une par ligne)" rows="2" v-model="message" required="required" minlength="3" maxlength="200">
+                    </textarea>
+                </p>
+                <h6>Décrivez la raison de votre rapport <span class="required">*</span></h6>
+                <p class="contact-message">
+                    <textarea id="contact_message" name="message" placeholder="Décrivez la raison de votre rapport" rows="3" required="required" v-model="message" minlength="15" maxlength="500">
+                    </textarea>
+                </p>
+                <p class="contact-submit">
+                    <div class="g-recaptcha" data-sitekey="<%= recaptchaKey %>"></div>
+                    <p>En cliquand sur 'Envoyer', vous nous autorisez à stocker, utiliser, vos données personnelles au sein de Thingmill.
+                    </p>
+                    <button id="contact-submit" class="submit" type="submit">Envoyez le rapport</button>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const app = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    name: '',
+                    company: '',
+                    email: '',
+                    message: ''
+                }
+            },
+            methods: {
+                submit: function() {
+                    if (
+                        grecaptcha.getResponse() !== ""
+                    ) {
+                        axios.post('/abuse_contact', {
+                            name: this.name,
+                            email: this.email,
+                            company: this.company,
+                            message: this.message,
+                            recaptcha: grecaptcha.getResponse()
+                        }).then(() => {
+                            this.name = ''
+                            this.company = ''
+                            this.email = ''
+                            this.message = ''
+                            console.log(window.grecaptcha)
+                            window.grecaptcha.reset()
+
+                            swal("Envoyé !", "Nous traiterons très rapidement ce rapport", "success")
+
+                        }).catch((err) => {
+                            swal("Erreur !", "Nous n'avons pas pu traiter ce rapport", "error")
+                        })
+                    }
+                }
+            }
+
+        })
+    </script>
+    <% include ../footer %>
