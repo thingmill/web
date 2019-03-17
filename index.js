@@ -34,8 +34,11 @@ app.get('/', function (req, res) {
 })
 
 app.get('/abuse', function (req, res) {
-    res.render('legal/abuse');
-});
+    res.render('legal/abuse', {
+        recaptchaKey: process.env.RECAPTCHA_PUBLIC,
+        recaptcha: ''
+    });
+})
 
 app.get('/notice', function (req, res) {
     res.render('legal/notice');
@@ -60,6 +63,111 @@ app.get('/projects', function (req, res) {
 app.get('*', function (req, res) {
     res.render('errors/404');
 });
+
+// ABUSE SECTION //
+
+app.post("/abuse_contact", [
+    check('name').exists(),
+    check('name').isLength({
+        min: 2,
+        max: 255
+    }),
+    check('url').exists(),
+    check('url').isLength({
+        min: 2,
+        max: 255
+    }),
+    check('message').exists(),
+    check('message').isLength({min: 5, max: 955}),
+    check('recaptcha').exists(),
+    check('email').exists(),
+    check('email').isLength({
+        min: 2,
+        max: 255
+    }),
+    check('email').isEmail()
+], function (req, res) {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({
+            errors: errors.array()
+        });
+    }
+
+    axios.post('https://www.google.com/recaptcha/api/siteverify',
+        querystring.stringify({
+            secret: process.env.RECAPTCHA_PRIVATE,
+            response: req.body.recaptcha,
+            remoteip: req.connection.remoteAddress
+        }), {
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+    }).then((response) => {
+        if (response.data.success) {
+            res.json({
+                success: true
+            })
+
+            var Hook = new hookcord.Hook()
+                .setLink(process.env.DISCORD_WEBHOOK)
+                .setPayload({
+                    'embeds': [
+                        {
+                            'title': 'Nouveau message',
+                            'description': 'Un nouveau message a été envoyé depuis thingmill.fr',
+                            'fields': [
+                                {
+                                    'name': 'Ip',
+                                    'value': req.connection.remoteAddress,
+                                    'inline': true,
+                                },
+                                {
+                                    'name': 'Nom',
+                                    'value': req.body.name,
+                                    'inline': true,
+                                },
+                                {
+                                    'name': 'Email',
+                                    'value': req.body.email,
+                                    'inline': true,
+                                },
+                                {
+                                    'name': 'Entreprise',
+                                    'value': req.body.company,
+                                    'inline': true,
+                                },
+                                {
+                                    'name': 'Message',
+                                    'value': req.body.message,
+                                    'inline': true,
+                                }
+                            ],
+                            'timestamp': new Date(),
+                            'thumbnail': {
+                                url: 'https:' + gravatar.url(req.body.email, {
+                                    d: 'identicon'
+                                })
+                            }
+                        }
+                    ]
+                })
+                .fire()
+                .then(function (response) {})
+                .catch(function (e) {})
+
+            // send webhook
+            // send email
+
+        }
+    }).catch(() => {
+        return res.json({
+            success: false
+        })
+    })
+});
+
+/// CONTACT SECTION //
 
 app.post("/contact", [
     check('name').exists(),
@@ -161,6 +269,8 @@ app.post("/contact", [
         })
     })
 });
+
+// RUN SECTION
 
 app.listen(port, host, () => {
     console.log('Application run on ' + host + ':' + port)

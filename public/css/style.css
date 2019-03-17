@@ -8,6 +8,8 @@ body {
 	text-align: center;
 }
 
+
+
 .section.home {
 	min-height: 90vh;
 	display: flex;
@@ -90,6 +92,13 @@ body {
 	text-align: center;
 	margin-bottom: .5em;
 }
+
+.left-title {
+	text-align: left;
+	margin-bottom: .5em;
+	margin-left: .5em;
+}
+
 
 .icon-one {
  color:	#4db6ac;
@@ -228,6 +237,10 @@ body {
 
 }
 
+#contact-form .required {
+	 color: #ff0000;
+}
+
 #contact-form .submit {
     color: #FFF;
     cursor: pointer;
@@ -259,6 +272,10 @@ body {
 	color: #FFFFFF;
 }
 
+/* ==================================================
+   Markdown Section
+================================================== */
+
 .markdown {
 }
 
@@ -286,6 +303,10 @@ body {
 		padding-left: 0em;
 }
 
+/* ==================================================
+   Devis Section
+================================================== */
+
 .devis {
     color: #48486a;
 }
@@ -293,6 +314,11 @@ body {
 .devis:hover {
     color: #ffb005;
 }
+
+/* ==================================================
+   Call-To-Action Section
+================================================== */
+
 .call-to-action-bg {
   position: relative;
   overflow: hidden;
@@ -418,6 +444,10 @@ body {
   bottom: 115px;
   background: #0083ff;
 }
+
+/* ==================================================
+   Case-Study Section
+================================================== */
 
 .case-study, .portfolio {
   margin-bottom: 10px;
@@ -574,4 +604,24 @@ body {
   .case-study-bg:before {
     bottom: 155px;
   }
+}
+
+/* ==================================================
+   Activities Section
+================================================== */
+
+.web-site {
+	color: #018786;
+}
+.project-title {
+	font-size: 2.2em;
+	text-align: center;
+	margin-bottom: .5em;
+	color: #9575cd;
+}
+.sub-title {
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: .5em;
+	color: #9575cd;
 }
