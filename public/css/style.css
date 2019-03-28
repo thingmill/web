@@ -324,11 +324,11 @@ body {
   overflow: hidden;
   -o-object-fit: cover;
   object-fit: cover;
-	color: #48486A
+	color: #48486A;
 }
 .call-to-action-bg:before {
   position: absolute;
-  content: url("../img/geometric_pattern_violet.png");
+  content: url("../img/geometric_pattern_vert.png");
   top: -80%;
   left: -400px;
   margin-top: -65px;
@@ -339,7 +339,7 @@ body {
 }
 .call-to-action-bg:after {
   position: absolute;
-  content: url("../img/geometric_pattern_violet.png");
+  content: url("../img/geometric_pattern_vert.png");
   top: -80%;
   margin-top: -50px;
   right: -1380px;
