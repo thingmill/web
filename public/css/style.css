@@ -1,20 +1,14 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
 	font-family: 'Rubik', sans-serif;
 	background: #303030;
 	color: #f6f6f6;
 }
 
-main {
-  overflow: hidden;
-}
-
 .home {
 	text-align: center;
 }
+
+
 
 .section.home {
 	min-height: 90vh;
@@ -330,11 +324,11 @@ main {
   overflow: hidden;
   -o-object-fit: cover;
   object-fit: cover;
-	color: #48486A
+	color: #48486A;
 }
 .call-to-action-bg:before {
   position: absolute;
-  content: url("../img/geometric_pattern_violet.png");
+  content: url("../img/geometric_pattern_vert.png");
   top: -80%;
   left: -400px;
   margin-top: -65px;
@@ -345,7 +339,7 @@ main {
 }
 .call-to-action-bg:after {
   position: absolute;
-  content: url("../img/geometric_pattern_violet.png");
+  content: url("../img/geometric_pattern_vert.png");
   top: -80%;
   margin-top: -50px;
   right: -1380px;
@@ -630,47 +624,4 @@ main {
 	text-align: center;
 	margin-bottom: .5em;
 	color: #9575cd;
-}
-
-.project {
-  padding-bottom: 3em;
-  margin-bottom: 3em;
-  border-bottom: 1px solid gray;
-}
-
-.odd .col.s12.m6:first-of-type {
-  float: right;
-}
-
-@media only screen and (max-width: 500px) {
-  .home-actions-button {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .home-actions-button p {
-    margin-right: 0 !important;
-  }
-  .home-actions-button a {
-    width: 100%;
-  }
-  #team .col.s12.m4 {
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
-    padding-bottom: 3em;
-    border-bottom: 1px solid gray;
-  }
-  .title {
-    font-size: 3rem;
-  }
-  .project {
-    padding-top: 3em;
-    margin-bottom: 1em;
-    border-bottom: 1px solid gray;
-  }
-  .project:first-of-type {
-    padding-top: 0 !important;
-  }
-  .project .project-img {
-    margin-bottom: 2em !important;
-  }
 }
