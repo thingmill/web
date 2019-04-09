@@ -7,14 +7,18 @@
                 <p class="contact-email">
                     <input id="contact_email" name="email" type="email" placeholder="Votre email" required="required" v-model="email" minlength="4" maxlength="200">
                 </p>
+                
                 <h6>Quel type de rapport voulez-vous faire ? <span class="required">*</span></h6>
-                <select required id="reason" style="width: 100%;" name="reason">
-                    <option selected disabled>Sélectionnez...</option>
-                    <option value="higt">Copyright</option>
-                    <option value="median">Contrefaçon</option>
-                    <option value="higest">Anti-sémitisme, pornographie, racisme, incitation à la haine, terrorisme</option>
-                    <option value="low">Autre</option>
-                </select>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" disabled selected>Sélectionnez...</option>
+                        <option value="1">Copyright</option>
+                        <option value="2">Contrefaçon</option>
+                        <option value="3">Anti-sémitisme, pornographie, racisme, incitation à la haine, terrorisme</option>
+                        <option value="4">Autre</option>
+                    </select>
+                </div>
+
                 <h6>Entrez les ur(s) en question <span class="required">*</span></h6>
                 <p class="contact-url">
                     <textarea id="inputurl" name="url" type="text" placeholder="Entrez les url(s) en question (Une par ligne)" rows="2" v-model="message" required="required" minlength="3" maxlength="200">
@@ -34,7 +38,16 @@
             </form>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.8/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+
         const app = new Vue({
             el: '#app',
             data() {
