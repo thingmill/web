@@ -1,5 +1,5 @@
 <% include ../header %>
-    <div class="container">
+    <div class="container" id="abuse">
         <h1>Reporter un abus</h1>
         <div class="col s12 m9">
             <form id="contact-form" role="form" v-on:submit.prevent="submit">
@@ -7,21 +7,21 @@
                 <p class="contact-email">
                     <input id="contact_email" name="email" type="email" placeholder="Votre email" required="required" v-model="email" minlength="4" maxlength="200">
                 </p>
-                
+
                 <h6>Quel type de rapport voulez-vous faire ? <span class="required">*</span></h6>
                 <div class="input-field col s12">
-                    <select>
-                        <option value="" disabled selected>Sélectionnez...</option>
-                        <option value="1">Copyright</option>
-                        <option value="2">Contrefaçon</option>
-                        <option value="3">Anti-sémitisme, pornographie, racisme, incitation à la haine, terrorisme</option>
-                        <option value="4">Autre</option>
+                    <select name="abuse" v-model="abuse">
+                        <option value="none" disabled selected>Sélectionnez...</option>
+                        <option value="copyright">Copyright</option>
+                        <option value="contrefacon">Contrefaçon</option>
+                        <option value="pascool">Anti-sémitisme, pornographie, racisme, incitation à la haine, terrorisme</option>
+                        <option value="other">Autre</option>
                     </select>
                 </div>
 
                 <h6>Entrez les ur(s) en question <span class="required">*</span></h6>
                 <p class="contact-url">
-                    <textarea id="inputurl" name="url" type="text" placeholder="Entrez les url(s) en question (Une par ligne)" rows="2" v-model="message" required="required" minlength="3" maxlength="200">
+                    <textarea id="inputurl" name="urls" type="text" placeholder="Entrez les url(s) en question (Une par ligne)" rows="2" v-model="urls" required="required" minlength="3" maxlength="200">
                     </textarea>
                 </p>
                 <h6>Décrivez la raison de votre rapport <span class="required">*</span></h6>
@@ -49,11 +49,11 @@
         });
 
         const app = new Vue({
-            el: '#app',
+            el: '#abuse',
             data() {
                 return {
-                    name: '',
-                    company: '',
+                    urls: '',
+                    abuse: '',
                     email: '',
                     message: ''
                 }
@@ -64,14 +64,14 @@
                         grecaptcha.getResponse() !== ""
                     ) {
                         axios.post('/abuse_contact', {
-                            name: this.name,
+                            abuse: this.abuse,
                             email: this.email,
-                            company: this.company,
+                            urls: this.urls,
                             message: this.message,
                             recaptcha: grecaptcha.getResponse()
                         }).then(() => {
-                            this.name = ''
-                            this.company = ''
+                            this.abuse = ''
+                            this.urls = ''
                             this.email = ''
                             this.message = ''
                             console.log(window.grecaptcha)

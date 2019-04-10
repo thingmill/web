@@ -67,15 +67,15 @@ app.get('*', function (req, res) {
 // ABUSE SECTION //
 
 app.post("/abuse_contact", [
-    check('name').exists(),
-    check('name').isLength({
+    check('abuse').exists(),
+    check('abuse').isLength({
         min: 2,
         max: 255
     }),
-    check('url').exists(),
-    check('url').isLength({
-        min: 2,
-        max: 255
+    check('urls').exists(),
+    check('urls').isLength({
+        min: 5,
+        max: 955
     }),
     check('message').exists(),
     check('message').isLength({min: 5, max: 955}),
@@ -114,17 +114,12 @@ app.post("/abuse_contact", [
                 .setPayload({
                     'embeds': [
                         {
-                            'title': 'Nouveau message',
-                            'description': 'Un nouveau message a été envoyé depuis thingmill.fr',
+                            'title': 'Nouveau message abuse',
+                            'description': 'Un nouveau message abuse a été envoyé depuis thingmill.fr',
                             'fields': [
                                 {
                                     'name': 'Ip',
                                     'value': req.connection.remoteAddress,
-                                    'inline': true,
-                                },
-                                {
-                                    'name': 'Nom',
-                                    'value': req.body.name,
                                     'inline': true,
                                 },
                                 {
@@ -133,8 +128,13 @@ app.post("/abuse_contact", [
                                     'inline': true,
                                 },
                                 {
-                                    'name': 'Entreprise',
-                                    'value': req.body.company,
+                                    'name': 'Abuse type',
+                                    'value': req.body.abuse,
+                                    'inline': true,
+                                },
+                                {
+                                    'name': 'Abuse urls',
+                                    'value': req.body.urls,
                                     'inline': true,
                                 },
                                 {
