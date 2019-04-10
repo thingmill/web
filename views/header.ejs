@@ -43,7 +43,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/css/owl.carousel/owl.carousel.css"/>
     <link rel="stylesheet" type="text/css" href="/css/owl.carousel/owl.carousel.min.css"/>
-
+    <script type="text/javascript">
+        menu = false
+        function toggleMenu() {
+            if (menu) {
+                $('#mobile-menu').hide()
+            } else {
+                $('#mobile-menu').show()
+            }
+            menu = !menu
+        }
+    </script>
 </head>
 
 <body>
@@ -52,7 +62,9 @@
             <nav>
                 <div class="nav-wrapper">
                     <div class="row">
-                        <a href="/#" class="brand-logo center"><img src="img/thingmill_logo_navbar.png"></a>
+                        <a class="brand-logo center" onclick="toggleMenu()">
+                            <img src="img/thingmill_logo_navbar.png">
+                        </a>
                         <div class="col s6 header-left">
                             <ul id="nav-mobile" class="left hide-on-med-and-down">
                                 <li><a href="/" class="navigation-link left-text">Accueil</a></li>
@@ -74,4 +86,22 @@
             </nav>
         </div>
     </header>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-container">
+
+            <div class="mobile-menu-nav">
+                <ul>
+                    <li><a href="/" onclick="toggleMenu()" class="navigation-item">Fermer</a></li>
+                    <li><a href="/" onclick="toggleMenu()" class="navigation-item">Accueil</a></li>
+                    <li><a href="/#about" onclick="toggleMenu()" class="navigation-item">À propos</a></li>
+                    <li><a href="/#team" onclick="toggleMenu()" class="navigation-item">Notre Equipe</a></li>
+                    <li><a href="/activities" onclick="toggleMenu()" class="navigation-item">Nos Services</a></li>
+                    <li><a href="/#projects" onclick="toggleMenu()" class="navigation-item">Nos Projets</a></li>
+                    <li><a href="/#app" onclick="toggleMenu()" class="navigation-item">Demander un devis</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
     <main>

@@ -1,7 +1,8 @@
 body {
 	font-family: 'Rubik', sans-serif;
 	background: #303030;
-	color: #f6f6f6;
+  color: #f6f6f6;
+  overflow-x: hidden
 }
 
 .home {
@@ -31,6 +32,25 @@ body {
 
 .home-actions-button p:first-of-type {
 	margin-right: 4em;
+}
+
+@media all and (max-width: 599px) {
+  .home-actions-button {
+    margin-top: -0.5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+
+  .home-actions-button p:first-of-type {
+    margin-right: 0em;
+  }
+
+  .header-left, .header-right {
+    height: 95px;
+  }
+
 }
 
 .submit {
@@ -622,6 +642,59 @@ body {
 .sub-title {
 	font-size: 1.5em;
 	text-align: center;
-	margin-bottom: .5em;
+  margin-bottom: .5em;
 	color: #9575cd;
+}
+
+
+@media all and (max-width: 599px) {
+
+  .team-item {
+    margin-bottom: 2em;
+    padding-bottom: 2em !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+}
+
+/* mobile menu */
+.mobile-menu {
+  display: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(48, 48, 48, 0.9);
+  height: 100vh;
+  width: 100%;
+}
+
+.mobile-menu-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu-container ul li {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid gray;
+  width: 90%;
+  font-size: 1.2em;
+}
+
+.mobile-menu-container ul li a {
+  color: white;
+}
+
+.mobile-menu-nav {
+  width: 80%;
+}
+
+.mobile-menu-container ul li:first-of-type {
+  border-top: 1px solid gray;
 }
