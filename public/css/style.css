@@ -2,14 +2,16 @@ body {
 	font-family: 'Rubik', sans-serif;
 	background: #303030;
   color: #f6f6f6;
-  overflow-x: hidden
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 .home {
 	text-align: center;
 }
-
-
 
 .section.home {
 	min-height: 90vh;
@@ -653,6 +655,10 @@ body {
     margin-bottom: 2em;
     padding-bottom: 2em !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  
+  h1 {
+    font-size: 3.2rem !important;
   }
 
 }
