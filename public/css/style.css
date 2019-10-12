@@ -88,6 +88,10 @@ main {
 
 }
 
+.pcbway {
+  width: 60%
+}
+
 .left-text {
 	background: #4db6ac;
 	color: #f6f6f6;
