@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /abuse
+Disallow: /privacy
+Disallow: /terms-and-conditions
+Disallow: /404
+
+Sitemap: sitemap.xml
