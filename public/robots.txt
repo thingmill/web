@@ -3,5 +3,6 @@ Disallow: /abuse
 Disallow: /privacy
 Disallow: /terms-and-conditions
 Disallow: /404
+Disallow: /terms
 
 Sitemap: sitemap.xml
