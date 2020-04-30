@@ -4,7 +4,6 @@ Contact: mailto:contact@thingmill.fr
 #Designed for
 Preferred-Languages: fr
 
-
 #Absolute url
 Canonical: https://thingmill.fr/.well-know/security.txt
 

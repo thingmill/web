@@ -48,8 +48,8 @@ app.get('/privacy', function (req, res) {
     res.render('legal/privacy');
 });
 
-app.get('/terms-and-conditions', function (req, res) {
-    res.render('legal/terms-and-conditions');
+app.get('/terms', function (req, res) {
+    res.render('legal/terms');
 });
 
 app.get('/activities', function (req, res) {
