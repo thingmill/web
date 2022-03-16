@@ -1,11 +1,11 @@
 # Thingmill Website
 
-> The Thingmill corp website with Express
+> The Thingmill corp website with Express version 2.0
 
 ## Preview
 
 <center>
-<img src="https://cdn.discordapp.com/attachments/517822276889215018/706128061061398618/unknown.png" alt="alt" width="350">
+<img src="https://cdn.discordapp.com/attachments/401857607574487051/953610735794130964/firefox_S7cq3eCOFx.jpg" alt="alt" width="350">
 </center>
 
 ## Setup

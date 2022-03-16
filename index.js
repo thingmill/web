@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 const {
     check,
     validationResult
-} = require('express-validator/check');
+} = require('express-validator');
 
 
 let host = process.env.HOST == undefined ? '0.0.0.0' : process.env.HOST
@@ -50,14 +50,6 @@ app.get('/privacy', function (req, res) {
 
 app.get('/terms', function (req, res) {
     res.render('legal/terms');
-});
-
-app.get('/activities', function (req, res) {
-    res.render('activities');
-});
-
-app.get('/projects', function (req, res) {
-    res.render('projects');
 });
 
 app.get('*', function (req, res) {

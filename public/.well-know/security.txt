@@ -12,4 +12,4 @@ Policy: https://retrobox.tech/fr/privacy
 Policy: https://retrobox.tech/en/privacy
 
 #Work for us !
-Hiring: https://thingmill.fr/#app
+Hiring: https://thingmill.fr/

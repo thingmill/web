@@ -2,127 +2,80 @@
 <html lang="fr" dir="ltr">
 
 <head>
-    <title>Thingmill - A creative corporation</title>
+    <title>Thingmill - Une Entreprise Créative</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
     <meta name="identifier-url" content="https://thingmill.fr" />
     <meta name="title" content="Thingmill - A creative corporation" />
     <meta name="msapplication-TileColor" content="#4db6ac">
     <meta name="msapplication-TileImage" content="img/ThingMill Logo.png">
     <meta name="theme-color" content="#4db6ac">
     <meta name="author" content="Thingmill Corp">
-    <meta name="description" content="We invent, we create, we sell. Discover the history of the company that develops projects from young students.">
-    <meta name="keywords" content="thingmill, retrobox, retro, box, dépannage, informatique, retrobox tech, depannage, maintenance, heloup, devis, rétrobox" />
-    <meta name="copyright" content="© 2020 Thingmill" />
+    <meta name="description"
+        content="We invent, we create, we sell. Discover the history of the company that develops projects from young students.">
+    <meta name="keywords"
+        content="thingmill, retrobox, retro, box, dépannage, informatique, retrobox tech, depannage, maintenance, heloup, devis, rétrobox" />
+    <meta name="copyright" content="© 2022 Thingmill" />
     <meta name="robots" content="All" />
 
-    <meta property="og:description" content=" We invent, we create, we sell. Discover the history of the company that develops projects from young students.">
+    <meta property="og:description"
+        content=" We invent, we create, we sell. Discover the history of the company that develops projects from young students.">
     <meta property="og:title" content="Thingmill - A creative corporation">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thingmill.fr">
     <meta property="og:locale" content="fr_FR">
-    <meta property="og:image" content="https://raw.githubusercontent.com/thingmill/artworks/master/ThingMill%20Logo.png" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/thingmill/artworks/master/ThingMill%20Logo.png" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Thingmill - A creative corporation">
     <meta name="twitter:url" content="https://thingmill.fr">
-    <meta name="twitter:description" content=" We invent, we create, we sell. Discover the history of the company that develops projects from young students.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/thingmill/artworks/master/ThingMill%20Logo.png">
+    <meta name="twitter:description"
+        content=" We invent, we create, we sell. Discover the history of the company that develops projects from young students.">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/thingmill/artworks/master/ThingMill%20Logo.png">
 
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="icon" href="img/ThingMill Logo.png" />
     <link rel="icon" type="image/png" href="img/ThingMill Logo.png" />
     <link rel="icon" type="image/svg+xml" href="img/ThingMill Logo.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/owl.carousel/owl.carousel.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/owl.carousel/owl.carousel.min.css"/>
-    <script type="text/javascript">
-        menu = false
-        function toggleMenu() {
-            if (menu) {
-                $('#mobile-menu').hide()
-            } else {
-                $('#mobile-menu').show()
-            }
-            menu = !menu
-        }
-    </script>
 
-    <!-- Matomo -->
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.css" />
+
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9568be03e.js" crossorigin="anonymous"></script>
+
     <script type="text/javascript">
-      var _paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-      _paq.push(["setCookieDomain", "*.thingmill.fr"]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//analytics.thingmill.fr/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '2']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setCookieDomain", "*.thingmill.fr"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//analytics.thingmill.fr/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
     </script>
-    <noscript><p><img src="//analytics.thingmill.fr/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <noscript>
+        <p><img src="//analytics.thingmill.fr/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
     <!-- End Matomo Code -->
-
-</head>
-
-<body>
-    <header class="layout-header">
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                    <div class="row">
-                        <a class="brand-logo center" onclick="toggleMenu()">
-                            <img src="img/thingmill_logo_navbar.png">
-                        </a>
-                        <div class="col s6 header-left">
-                            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                                <li><a href="/" class="navigation-link left-text">Accueil</a></li>
-                                <li><a href="/#about" class="navigation-link left-text">À propos</a></li>
-                                <li><a href="/#team" class="navigation-link left-text">Notre Equipe</a></li>
-                            </ul>
-                        </div>
-                        <div class="col s6 header-right">
-                            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                                <!-- IN THE CASE WE HAVE TOO MANY PROJECTS -->
-                                <!--<li><a href="/projects" class="navigation-link right-text">Nos Projects</a></li>-->
-                                <li><a href="/activities" class="navigation-link right-text">Nos Services</a></li>
-                                <li><a href="/#projects" class="navigation-link right-text">Nos Projets</a></li>
-                                <li><a href="/#app" class="navigation-link right-text devis">Demander un devis</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-menu-container">
-
-            <div class="mobile-menu-nav">
-                <ul>
-                    <li><a href="/" onclick="toggleMenu()" class="navigation-item">Fermer</a></li>
-                    <li><a href="/" onclick="toggleMenu()" class="navigation-item">Accueil</a></li>
-                    <li><a href="/#about" onclick="toggleMenu()" class="navigation-item">À propos</a></li>
-                    <li><a href="/#team" onclick="toggleMenu()" class="navigation-item">Notre Equipe</a></li>
-                    <li><a href="/activities" onclick="toggleMenu()" class="navigation-item">Nos Services</a></li>
-                    <li><a href="/#projects" onclick="toggleMenu()" class="navigation-item">Nos Projets</a></li>
-                    <li><a href="/#app" onclick="toggleMenu()" class="navigation-item">Demander un devis</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-
-    <main>

@@ -1,6 +1,6 @@
 {
   "name": "thingmill-web",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The thingmill.fr web site.",
   "main": "index.js",
   "scripts": {
@@ -23,23 +23,23 @@
   },
   "homepage": "https://github.com/thingmill/web#readme",
   "dependencies": {
-    "axios": "^0.18.1",
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.5",
-    "dotenv": "^6.2.0",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
-    "express-validator": "^5.3.1",
-    "gravatar": "^1.8.0",
-    "hookcord": "^2.0.1",
+    "axios": "latest",
+    "body-parser": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "express-validator": "latest",
+    "gravatar": "latest",
+    "hookcord": "latest",
     "morgan": "latest",
     "nconf": "latest",
     "nodemailer": "latest",
     "nodemailer-mailgun-transport": "latest",
-    "nodemon": "^1.18.10",
-    "owl.carousel": "^2.3.4",
-    "querystring": "^0.2.0",
-    "recaptcha": "^1.2.1",
-    "request": "^2.88.0"
+    "nodemon": "latest",
+    "owl.carousel": "latest",
+    "querystring": "latest",
+    "recaptcha": "latest",
+    "request": "latest"
   }
 }
