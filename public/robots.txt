@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /abuse
 Disallow: /privacy
 Disallow: /404
+Disallow: /notice
 Disallow: /terms
 
 Sitemap: sitemap.xml

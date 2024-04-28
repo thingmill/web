@@ -1,99 +1,68 @@
-<% include ../header %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <div class="container" id="abuse">
-        <h1>Reporter un abus</h1>
-        <div class="col s12 m9">
-            <form id="contact-form" role="form" v-on:submit.prevent="submit">
-                <h6>Votre adresse mail <span class="required">*</span></h6>
-                <p class="contact-email">
-                    <input id="contact_email" name="email" type="email" placeholder="Votre email" required="required"
-                        v-model="email" minlength="4" maxlength="200">
-                </p>
-
-                <h6>Quel type de rapport voulez-vous faire ? <span class="required">*</span></h6>
-                <div class="input-field col s12">
-                    <select name="abuse" v-model="abuse">
-                        <option value="none" disabled selected>Sélectionnez...</option>
-                        <option value="copyright">Copyright</option>
-                        <option value="contrefacon">Contrefaçon</option>
-                        <option value="pascool">Anti-sémitisme, pornographie, racisme, incitation à la haine, terrorisme
-                        </option>
-                        <option value="other">Autre</option>
-                    </select>
+<%- include('../header') %>
+<main>
+    <div class="uk-container uk-margin-xlarge-top" id="abuse">
+        <h1 class="uk-heading-divider">Reporter un abus</h1>
+        <div class="uk-grid">
+            <form id="contact-form" class="uk-form-stacked" role="form" method="POST" action="/abuse_contact" uk-grid>
+                <div class="uk-width-1-1">
+                    <label class="uk-form-label" for="contact_email">Votre adresse mail <span class="required">*</span></label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="contact_email" name="email" type="email" placeholder="Votre email" required minlength="4" maxlength="200">
+                    </div>
                 </div>
-
-                <h6>Entrez les url(s) en question <span class="required">*</span></h6>
-                <p class="contact-url">
-                    <textarea id="inputurl" name="urls" type="text"
-                        placeholder="Entrez les url(s) en question (Une par ligne)" rows="2" v-model="urls"
-                        required="required" minlength="3" maxlength="200">
-                    </textarea>
-                </p>
-                <h6>Décrivez la raison de votre rapport <span class="required">*</span></h6>
-                <p class="contact-message">
-                    <textarea id="contact_message" name="message" placeholder="Décrivez la raison de votre rapport"
-                        rows="3" required="required" v-model="message" minlength="15" maxlength="500">
-                    </textarea>
-                </p>
-                <p class="contact-submit">
-                <div class="g-recaptcha" data-sitekey="<%= recaptchaKey %>"></div>
-                <p>En cliquand sur 'Envoyer', vous nous autorisez à stocker, utiliser, vos données personnelles au sein
-                    de Thingmill.
-                </p>
-                <button id="contact-submit" class="submit" type="submit">Envoyez le rapport</button>
-                </p>
+                
+                <div class="uk-width-1-1">
+                    <label class="uk-form-label" for="abuse_type">Quel type de rapport voulez-vous faire ? <span class="required">*</span></label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select" id="abuse_type" name="abuse" required>
+                            <option value="" disabled selected>Sélectionnez...</option>
+                            <option value="copyright">Copyright</option>
+                            <option value="contrefacon">Contrefaçon</option>
+                            <option value="pascool">Anti-sémitisme, pornographie, racisme, incitation à la haine, terrorisme</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="uk-width-1-1">
+                    <label class="uk-form-label" for="inputurl">Entrez les url(s) en question <span class="required">*</span></label>
+                    <div class="uk-form-controls">
+                        <textarea class="uk-textarea" id="inputurl" name="urls" placeholder="Entrez les url(s) en question (Une par ligne)" rows="2" required minlength="3" maxlength="200"></textarea>
+                    </div>
+                </div>
+                
+                <div class="uk-width-1-1">
+                    <label class="uk-form-label" for="contact_message">Décrivez la raison de votre rapport <span class="required">*</span></label>
+                    <div class="uk-form-controls">
+                        <textarea class="uk-textarea" id="contact_message" name="message" placeholder="Décrivez la raison de votre rapport" rows="3" required minlength="15" maxlength="500"></textarea>
+                    </div>
+                </div>
+                
+                <div class="uk-width-1-1 uk-margin">
+                    <div class="g-recaptcha" data-sitekey="<%= recaptchaKey %>" data-callback="reCaptchaCallback"></div>
+                    <input type="hidden" name="recaptcha" id="recaptcha-response">
+                    <p class="uk-margin-remove-top">En cliquant sur 'Envoyer', vous nous autorisez à stocker et utiliser vos données personnelles au sein de Thingmill.</p>
+                </div>
+                
+                <div class="uk-width-1-1">
+                    <button class="uk-button uk-button-primary" type="submit">Envoyez le rapport</button>
+                </div>
+                
+                <% if (messages.error) { %>
+                    <div class="uk-alert-danger" uk-alert>
+                        <a class="uk-alert-close" uk-close></a>
+                        <p><%= messages.error %></p>
+                    </div>
+                <% } %>
+                <% if (messages.success) { %>
+                    <div class="uk-alert-success" uk-alert>
+                        <a class="uk-alert-close" uk-close></a>
+                        <p><%= messages.success %></p>
+                    </div>
+                <% } %>
             </form>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.8/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</main>
 
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('select');
-            var instances = M.FormSelect.init(elems);
-        });
-
-        const app = new Vue({
-            el: '#abuse',
-            data() {
-                return {
-                    urls: '',
-                    abuse: 'none',
-                    email: '',
-                    message: ''
-                }
-            },
-            methods: {
-                submit: function () {
-                    if (
-                        grecaptcha.getResponse() !== ""
-                    ) {
-                        axios.post('/abuse_contact', {
-                            abuse: this.abuse,
-                            email: this.email,
-                            urls: this.urls,
-                            message: this.message,
-                            recaptcha: grecaptcha.getResponse()
-                        }).then(() => {
-                            this.abuse = ''
-                            this.urls = ''
-                            this.email = ''
-                            this.message = ''
-                            console.log(window.grecaptcha)
-                            window.grecaptcha.reset()
-
-                            swal("Envoyé !", "Nous traiterons très rapidement ce rapport", "success")
-
-                        }).catch((err) => {
-                            swal("Erreur !", "Nous n'avons pas pu traiter ce rapport", "error")
-                        })
-                    }
-                }
-            }
-
-        })
-    </script>
-    <% include ../footer %>
+<%- include('../footer') %>

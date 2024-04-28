@@ -5,7 +5,7 @@
 ## Preview
 
 <center>
-<img src="https://cdn.discordapp.com/attachments/401857607574487051/953610735794130964/firefox_S7cq3eCOFx.jpg" alt="alt" width="350">
+<img src="https://raw.githubusercontent.com/thingmill/web/master/preview.png" alt="alt" width="350">
 </center>
 
 ## Setup

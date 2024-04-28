@@ -1,11 +1,11 @@
 {
   "name": "thingmill-web",
-  "version": "2.0.0",
+  "version": "2.5.0",
   "description": "The thingmill.fr web site.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/nodemon",
+    "dev": "nodemon index.js",
     "start": "env PORT=3006 node index.js"
   },
   "repository": {
@@ -25,10 +25,13 @@
   "dependencies": {
     "axios": "latest",
     "body-parser": "latest",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
     "cors": "latest",
     "dotenv": "latest",
     "ejs": "latest",
     "express": "latest",
+    "express-session": "^1.18.0",
     "express-validator": "latest",
     "gravatar": "latest",
     "hookcord": "latest",

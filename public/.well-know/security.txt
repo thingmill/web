@@ -8,8 +8,7 @@ Preferred-Languages: fr
 Canonical: https://thingmill.fr/.well-know/security.txt
 
 #Our policies
-Policy: https://retrobox.tech/fr/privacy
-Policy: https://retrobox.tech/en/privacy
+Policy: https://thingmill.fr/privacy
 
 #Work for us !
 Hiring: https://thingmill.fr/

@@ -1,64 +1,46 @@
-</main>
-<footer class="page-footer teal lighten-1">
-
-    <!-- views/partials/footer.ejs -->
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Retrouvez nous sur</h5>
-                <a class="btn-floating btn waves-effect waves-light media-icon" style="background: #171516" target="_blank" href="https://github.com/thingmill"><i class="fab fa-github"></i></a>
-                <a class="btn-floating btn waves-effect waves-light media-icon" style="background: #00ACED" target="_blank" href="https://twitter.com/thingmill_corp"><i class="fab fa-twitter"></i></a>
-                <a class="btn-floating btn waves-effect waves-light media-icon" style="background: #3B5998" target="_blank" href="https://www.facebook.com/Thingmill/"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn-floating btn waves-effect waves-light media-icon" style="background: #11551D" target="_blank" href="tel:0769997549"><i class="fas fa-phone"></i></a>
-                <br>
-                <br><a href="mailto:contact@thingmill.fr" style="color: #ffb005; font-size: large">contact@thingmill.fr</a>
-                <p class="grey-text text-lighten-4">Thingmill est une entreprise créée en 2018 dans le secteur de l'informatique.</p>
-                <p class="grey-text text-lighten-4" style="font-style: italic">We invent, we create, we sell.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Autres</h5>
-                <ul>
-                    <li><a class="grey-text text-lighten-3" href="/notice">Mentions légales</a></li>
-                    <li><a class="grey-text text-lighten-3" href="/terms">Conditions générales
-                                d'utilisation</a></li>
-                    <li><a class="grey-text text-lighten-3" href="/privacy">Politique de confidentialité</a></li>
-                    <li><a class="grey-text text-lighten-3" href="/abuse">Reporter un abus</a></li>
-                    <br>
-                    <li><a class="grey-text text-lighten-3" href="/abuse">En partenaire avec</a></li>
-                    <br>
-                    <li><a href="https://www.pcbway.com/setinvite.aspx?inviteid=317110"><img class="pcbway" src="img/pcbway.png"></a></li>
-                </ul>
-            </div>
-        </div>
+<footer class="uk-footer" style="background-color: #202020;">
+  <div class="uk-container ">
+    <div class="uk-grid-match uk-grid-divider" uk-grid>
+      <div class="uk-width-expand">
+        <a href="https://thingmill.fr">
+          <img src="/img/thingmill_logo_white.png" class="logo-footer" alt="Logo Thingmill" style="max-height: 50px;">
+        </a>
+        <p>© Thingmill 2024 - RCS 890 687 601 Alençon</p>
+      </div>
+      <div class="uk-width-auto">
+        <ul class="uk-list uk-list-divider">
+          <li>
+            <a href="https://status.thingmill.fr" target=”_blank” class="uk-link-reset">🚦 Status des services</a>
+          </li>
+          <li>
+            <a href="/notice" class="uk-link-reset">Mentions légales</a>
+          </li>
+          <li>
+            <a href="/terms" class="uk-link-reset">Conditions générales d'utilisation</a>
+          </li>
+          <li>
+            <a href="/privacy" class="uk-link-reset">Politique de confidentialité</a>
+          </li>
+          <li>
+            <a href="/abuse" class="uk-link-reset">Reporter un abus</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-copyright">
-        <div class="container">
-            © Thingmill 2023 - R.C.S 890 687 601 Alençon
-            <br> L'utilisation de tout materiel respecte les droits d'auteurs et sont tous utilisés sous un usage juste et légale
-        </div>
+    <div class="uk-text-center uk-margin-top">
+      Suivez-nous sur :
+      <a href="https://facebook.com/Thingmill" target=”_blank” uk-icon="icon: facebook"></a>
+      <a href="https://twitter.com/Thingmill_Corp" target=”_blank” uk-icon="icon: twitter"></a>
+      <a href="https://linkedin.com/company/thingmill" target=”_blank” uk-icon="icon: linkedin"></a>
     </div>
+  </div>
 </footer>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
-<script type="text/javascript" src="js/flexibility.js"></script>
-<script type="text/javascript" src="js/validator.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="js/owcaroussel.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-
-<script type="text/javascript">
-    new WOW().init();
-</script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Scripts -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
-    AOS.init();
+  function reCaptchaCallback(response) {
+    document.getElementById('recaptcha-response').value = response;
+  }
 </script>
 </body>
-
 </html>

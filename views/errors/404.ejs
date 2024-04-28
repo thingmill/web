@@ -1,16 +1,22 @@
-<% include ../header %>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <h1 class="title">Oh ! no....</h1>
-   <div class="container">
-      <center><img src="../img/404.gif" style="width:75%"></center>
-      <hr>
-      <center>
-         <p><b>Cela peut être dû à :</b><br>
-            La page est en construction<br>
-            La page n'existe pas<br>
-            La page est introuvable<br>
-            Bug interne du site<br>
-            (Contactez nous : contact@thingmill.fr)</p>
-      </center>
+<%- include('../header') %>
+<main>
+   <div class="uk-container uk-margin-xlarge-top uk-text-center uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+      <h1>Oh non...</h1>
+      <img src="../img/404.gif" alt="Page Not Found"
+         class="uk-margin-auto uk-animation-fade"
+         style="max-width:500px;">
+      <h2>La page que vous cherchez n'existe pas</h2>
+      <div class="uk-margin-bottom">
+         <p><b>Cela peut être dû à :</b></p>
+         <ul class="uk-list uk-list-bullet">
+            <li>La page est en construction</li>
+            <li>La page n'existe pas</li>
+            <li>La page est introuvable</li>
+            <li>Bug interne du site</li>
+         </ul>
+         <p>Contactez-nous : <a href="mailto:contact@thingmill.fr"
+               class="uk-link-reset">contact@thingmill.fr</a></p>
+      </div>
    </div>
-   <% include ../footer %>
+</main>
+<%- include('../footer') %>
