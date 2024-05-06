@@ -1,470 +1,580 @@
-<%- include('header') %>
-  <main>
-    <div class="uk-position-relative" id="accueil">
-      <div class="cover accueil">
-        <div class="uk-light uk-flex">
-          <div class="uk-margin-xlarge-top uk-margin-large-left uk-margin-large-right">
-            <div class="cover-title">
-              <h1 class="uk-text-bold titre">Imaginer, <span class="primary">Innover</span> et Réaliser </h1>
-              <div>
-                <a href="#about" class="uk-button button-titre uk-button-default uk-text-bold uk-margin-small-right">En
-                  Savoir Plus</a>
-                <a href="#contact" class="uk-button button-titre uk-button-primary uk-text-bold button-header">
-                  <i class="fas fa-paper-plane uk-margin-small-right"></i>Nous
-                  Contacter
-                </a>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body>
+    <header>
+      <%- include('partials/header') %>
+    </header>
+    <main>
+      <div class="uk-position-relative" id="accueil">
+        <div class="cover accueil">
+          <div class="uk-light uk-flex">
+            <div
+              class="uk-margin-xlarge-top uk-margin-large-left uk-margin-large-right">
+              <div class="cover-title">
+                <h1 class="uk-text-bold titre">Imaginer, <span
+                    class="primary">Innover</span> et Réaliser </h1>
+                <div>
+                  <a href="#about"
+                    class="uk-button button-titre uk-button-default uk-text-bold uk-margin-small-right">En
+                    Savoir Plus</a>
+                  <a href="#contact"
+                    class="uk-button button-titre uk-button-primary uk-text-bold button-header">
+                    <i class="fas fa-paper-plane uk-margin-small-right"></i>Nous
+                    Contacter
+                  </a>
+                </div>
               </div>
             </div>
+            <div class="superposition uk-margin-xlarge-top">
+              <img style="margin-top: 6em;"
+                class="bg-card card-img uk-align-left" src="img/img-1.jpg"
+                alt="Soudure de la RetroBox">
+              <img style="margin-left: -6em; margin-top: 0em;"
+                class="bg-card card-img uk-align-left" src="img/img-2.jpg"
+                alt="Soudure de la RetroBox">
+              <img style="margin-left: -2em; margin-top: 3em;"
+                class="bg-card card-img uk-align-left" src="img/img-3.png"
+                alt="L'équipe qui code">
+            </div>
           </div>
-          <div class="superposition uk-margin-xlarge-top">
-            <img style="margin-top: 6em;" class="bg-card card-img uk-align-left" src="img/img-1.jpg" alt="Soudure de la RetroBox">
-            <img style="margin-left: -6em; margin-top: 0em;" class="bg-card card-img uk-align-left" src="img/img-2.jpg" alt="Soudure de la RetroBox">
-            <img style="margin-left: -2em; margin-top: 3em;" class="bg-card card-img uk-align-left" src="img/img-3.png" alt="L'équipe qui code">
+          <div class="uk-position-bottom-center uk-margin-remove">
+            <i class="fas fa-chevron-down"></i>
           </div>
         </div>
-        <div class="uk-position-bottom-center uk-margin-remove">
-          <i class="fas fa-chevron-down"></i>
-        </div>
-      </div>
 
-      <div class="uk-margin-large-top" id="about">
-        <div class="container">
-          <h1 class="uk-text-bold">Qui <span class="primary">sommes</span> nous ?
-          </h1>
-          <p>Thingmill est une entreprise créée par des étudiants en 2018 par
-            Valentin Derouet, Étienne Chevrollier et Matthieu Bessat, trois amis
-            qui travaille ensemble sur leur temps libre.</p>
+        <div class="uk-margin-large-top" id="about">
+          <div class="container">
+            <h1 class="uk-text-bold">Qui <span class="primary">sommes</span>
+              nous ?
+            </h1>
+            <p>Thingmill est une entreprise créée par des étudiants en 2018 par
+              Valentin Derouet, Étienne Chevrollier et Matthieu Bessat, trois
+              amis
+              qui travaille ensemble sur leur temps libre.</p>
+          </div>
         </div>
-      </div>
-      <div class="uk-margin-large-top degrade right">
-        <div class="container">
-          <h1 class="uk-text-bold">Que <span class="primary">faisons</span> nous ?
-          </h1>
-          <p>Nous inventons, nous créons et nous vendons. Notre but est de créer
-            des objets ou des services jamais vu et qui rendent services. Nous
-            proposons de l'infogérence pour des TPE/PME et de l'hébergement web
-            sur une infrastructure dédiée entièrement administrée par
-            Thingmill.</p>
+        <div class="uk-margin-large-top degrade right">
+          <div class="container">
+            <h1 class="uk-text-bold">Que <span class="primary">faisons</span>
+              nous ?
+            </h1>
+            <p>Nous inventons, nous créons et nous vendons. Notre but est de
+              créer
+              des objets ou des services jamais vu et qui rendent services. Nous
+              proposons de l'infogérence pour des TPE/PME et de l'hébergement
+              web
+              sur une infrastructure dédiée entièrement administrée par
+              Thingmill.</p>
+          </div>
         </div>
-      </div>
-      <div class="uk-margin-large-top uk-margin-large-bottom" id="team">
-        <div class="container center">
-          <h1 class="uk-text-bold">Notre Équipe</h1>
-        </div>
-        <div class="uk-child-width-1-3@m uk-margin-large-top team" uk-grid>
-          <div>
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img src="img/team/valentin.jpg" alt="Valentin">
+        <div class="uk-margin-large-top uk-margin-large-bottom" id="team">
+          <div class="container center">
+            <h1 class="uk-text-bold">Notre Équipe</h1>
+          </div>
+          <div class="uk-child-width-1-3@m uk-margin-large-top team" uk-grid>
+            <div>
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <img src="img/team/valentin.jpg" alt="Valentin">
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Valentin Derouet</h3>
+                  <p>22 ans, admin sys et réseaux, concepteur électronique</p>
+                  <li class="personnal-icon">
+                    <a href="https://www.linkedin.com/in/valentin-derouet/">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/StoneSet">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/_StoneSet">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://valentinderouet.fr/">
+                      <i class="fas fa-globe"></i>
+                    </a>
+                  </li>
+                </div>
               </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <img src="img/team/etienne.png" alt="Etienne">
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Etienne Chevrollier</h3>
+                  <p>21 ans, dev web front-data, infographiste</p>
+                  <li class="personnal-icon">
+                    <a
+                      href="https://www.linkedin.com/in/etienne-chevrollier-493076152/">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Wabfall">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/EtienneCvr">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://wabfall.me/">
+                      <i class="fas fa-globe"></i>
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <img src="img/team/matthieu.jpg" alt="Matthieu">
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Matthieu Bessat</h3>
+                  <p>21 ans, dev web full-stack, front-end et back-end</p>
+                  <li class="personnal-icon">
+                    <a href="https://github.com/lefuturiste">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://attreno.fr/deck/@mbess">
+                      <i class="fa-brands fa-mastodon"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/matthieu-bessat-932098167/">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="http://matthieubessat.fr/">
+                      <i class="fas fa-globe"></i>
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-margin-large-top uk-margin-large-bottom" id="service">
+          <div class="container center">
+            <h1 class="uk-text-bold">Nos Services</h1>
+          </div>
+          <div
+            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
+            uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+              <img src="img/activities/website.jpg"
+                alt="Site d'exemple pour de la refonte" uk-cover>
+              <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">Valentin Derouet</h3>
-                <p>22 ans, admin sys et réseaux, concepteur électronique</p>
-                <li class="personnal-icon">
-                  <a href="https://www.linkedin.com/in/valentin-derouet/">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/StoneSet">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://twitter.com/_StoneSet">
-                    <i class="fa-brands fa-x-twitter"></i>
-                  </a>
-                  <a href="https://valentinderouet.fr/">
-                    <i class="fas fa-globe"></i>
-                  </a>
-                </li>
+                <h3 class="uk-card-title">Refonte & création de sites web</h3>
+                <p>Le site web parfait pour votre marque</p>
+                <p>Vous avez besoin d'être présent sur Internet ? Nous sommes là
+                  pour vous, le web est notre passion ! Du site vitrine en
+                  passant
+                  au site e-commerce au dashboard, nous vous apportons une
+                  solution
+                  sur-mesure et adaptée à chaque projet de création de site
+                  Internet.</p>
+                <a href="#contact">Demandez un devis gratuitement</a>
+                <div class="uk-margin-medium-top" uk-lightbox>
+                  <a class="uk-button uk-button-default"
+                    href="img/wemade/untdorne.jpg" data-caption="untdorne.fr"
+                    data-alt="Image">Exemples de sites
+                    réalisées</a>
+                  <a href="img/wemade/nb-kinesio.png"
+                    data-caption="nb-kinesio.fr"></a>
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img src="img/team/etienne.png" alt="Etienne">
-              </div>
+          <div
+            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
+            uk-grid>
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+              <img src="img/activities/seo.jpg"
+                alt="Illustration du Search Engine Optimization" uk-cover>
+              <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">Etienne Chevrollier</h3>
-                <p>21 ans, dev web front-data, infographiste</p>
-                <li class="personnal-icon">
-                  <a href="https://www.linkedin.com/in/etienne-chevrollier-493076152/">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/Wabfall">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://twitter.com/EtienneCvr">
-                    <i class="fa-brands fa-x-twitter"></i>
-                  </a>
-                  <a href="https://wabfall.me/">
-                    <i class="fas fa-globe"></i>
-                  </a>
-                </li>
+                <h3 class="uk-card-title">SEO - Campagnes publicitaires</h3>
+                <p>Soyez première place sur Google !</p>
+                <p>Comme vous le savez, de nos jours la visibilité numérique est
+                  un
+                  enjeu crucial pour toute société qui cherche à se développer.
+                  Il
+                  est important de disposer de tous les outils pour générer un
+                  maximum de visibilité qualifiée au niveau régional, national
+                  et
+                  international afin d’augmenter de manière significative le
+                  trafic
+                  sur votre site internet, mais aussi d’élargir votre clientèle,
+                  prospects et apporter une image de marque important auprès des
+                  internautes </p>
+                <a href="#contact">Demandez un devis gratuitement</a>
               </div>
             </div>
           </div>
-          <div>
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img src="img/team/matthieu.jpg" alt="Matthieu">
-              </div>
+          <div
+            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
+            uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+              <img src="img/activities/logo.jpg"
+                alt="Design de logo et de chartre graphique" uk-cover>
+              <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">Matthieu Bessat</h3>
-                <p>21 ans, dev web full-stack, front-end et back-end</p>
-                <li class="personnal-icon">
-                  <a href="https://github.com/lefuturiste">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://attreno.fr/deck/@mbess">
-                    <i class="fa-brands fa-mastodon"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/matthieu-bessat-932098167/">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                  <a href="http://matthieubessat.fr/">
-                    <i class="fas fa-globe"></i>
-                  </a>
-                </li>
+                <h3 class="uk-card-title">Identité visuelle & Support
+                  Graphique</h3>
+                <p>Vous ne possédez pas de logo pour votre entreprise ? Trouvez
+                  le
+                  votre ici !</p>
+                <p>Concevoir une identité visuelle c’est traduire une
+                  personnalité,
+                  un univers, une atmosphère. C’est capter l’essence d’une
+                  marque et
+                  la retranscrire graphiquement avec justesse et savoir-faire.
+                  Plus
+                  que créer du beau, nous nous attachons à créer du sens, un
+                  concept, un environnement, une histoire pour chacun de nos
+                  clients... </p>
+                <a href="#contact">Demandez un devis gratuitement</a>
+                <div class="uk-margin-medium-top" uk-lightbox>
+                  <a class="uk-button uk-button-default"
+                    href="img/wemade/untorne.png" data-caption="untdorne.fr"
+                    data-alt="Image">Exemples
+                    d'identitées visuelles réalisées</a>
+                  <a href="img/nb-kinesio.png" data-caption="nb-kinesio.fr"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
+            uk-grid>
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+              <img src="img/activities/computer.jpg"
+                alt="Réparation de matériel informatique" uk-cover>
+              <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">Maintenance informatique à
+                  domicile</h3>
+                <p>Votre ordinateur est en panne ?</p>
+                <p>Un problème avec votre ordinateur ? Nos experts pourront
+                  résoudre
+                  votre problème rapidement et à moindre coût. Cela peut aller
+                  d'un
+                  pc qui bug au montage d'une machine sur-mesure. Vous pouvez
+                  même
+                  envoyer votre ordinateur/objet à réparer directement par
+                  Laposte !
+                  Il est aussi possible de l'ammener directement au siège de
+                  l'entreprise.</p>
+                <a href="#contact">Demandez un devis gratuitement</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
+            uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+              <img src="img/activities/server.jpg"
+                alt="Gestion et infogérence d'infrastructure" uk-cover>
+              <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">Gestion d'infrastructure réseau</h3>
+                <p>Vous n'avez pas envie de vous occuper de la mise en
+                  production de
+                  votre site web ?</p>
+                <p>Vous avez besoin d'un machine ? D'une mise en production d'un
+                  site web ? Et vous n'avez pas envie de vous occuper de tout ça
+                  ?
+                  Laissez faire, nous pouvons vous mettre une machine à votre
+                  disposition et en assurer la fiabilité. Vous pouvez
+                  directement
+                  nous donner votre site web, et nous nous occupons de la
+                  création
+                  du nom de domaine, de toute la gestion à votre place !</p>
+                <a href="#contact">Demandez un devis gratuitement</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
+            uk-grid>
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+              <img src="img/activities/electronic.jpg"
+                alt="Conception et dessin de matériel électronique" uk-cover>
+              <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">Création électronique</h3>
+                <p>Mettez au jour vos idées !</p>
+                <p>Vous avez un projet nécessitant des compétences en
+                  éléctronique
+                  que vous n'avez pas ? Nous pouvons vous créer des PCB sur
+                  mesure !
+                  Nous proposons une création de A à Z de la PCB, avec
+                  prototypage
+                  etc</p>
+                <a href="#contact">Demandez un devis gratuitement</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="uk-margin-large-top uk-margin-large-bottom" id="service">
-        <div class="container center">
-          <h1 class="uk-text-bold">Nos Services</h1>
-        </div>
-        <div
-          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-          uk-grid>
-          <div class="uk-card-media-left uk-cover-container">
-            <img src="img/activities/website.jpg" alt="Site d'exemple pour de la refonte" uk-cover>
-            <canvas width="600" height="400"></canvas>
-          </div>
-          <div>
-            <div class="uk-card-body">
-              <h3 class="uk-card-title">Refonte & création de sites web</h3>
-              <p>Le site web parfait pour votre marque</p>
-              <p>Vous avez besoin d'être présent sur Internet ? Nous sommes là
-                pour vous, le web est notre passion ! Du site vitrine en passant
-                au site e-commerce au dashboard, nous vous apportons une solution
-                sur-mesure et adaptée à chaque projet de création de site
-                Internet.</p>
-              <a href="#contact">Demandez un devis gratuitement</a>
-              <div class="uk-margin-medium-top" uk-lightbox>
-                <a class="uk-button uk-button-default" href="img/wemade/untdorne.jpg" data-caption="untdorne.fr"
-                  data-alt="Image">Exemples de sites
-                  réalisées</a>
-                <a href="img/wemade/nb-kinesio.png" data-caption="nb-kinesio.fr"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-          uk-grid>
-          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-            <img src="img/activities/seo.jpg" alt="Illustration du Search Engine Optimization" uk-cover>
-            <canvas width="600" height="400"></canvas>
-          </div>
-          <div>
-            <div class="uk-card-body">
-              <h3 class="uk-card-title">SEO - Campagnes publicitaires</h3>
-              <p>Soyez première place sur Google !</p>
-              <p>Comme vous le savez, de nos jours la visibilité numérique est un
-                enjeu crucial pour toute société qui cherche à se développer. Il
-                est important de disposer de tous les outils pour générer un
-                maximum de visibilité qualifiée au niveau régional, national et
-                international afin d’augmenter de manière significative le trafic
-                sur votre site internet, mais aussi d’élargir votre clientèle,
-                prospects et apporter une image de marque important auprès des
-                internautes </p>
-              <a href="#contact">Demandez un devis gratuitement</a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-          uk-grid>
-          <div class="uk-card-media-left uk-cover-container">
-            <img src="img/activities/logo.jpg" alt="Design de logo et de chartre graphique" uk-cover>
-            <canvas width="600" height="400"></canvas>
-          </div>
-          <div>
-            <div class="uk-card-body">
-              <h3 class="uk-card-title">Identité visuelle & Support Graphique</h3>
-              <p>Vous ne possédez pas de logo pour votre entreprise ? Trouvez le
-                votre ici !</p>
-              <p>Concevoir une identité visuelle c’est traduire une personnalité,
-                un univers, une atmosphère. C’est capter l’essence d’une marque et
-                la retranscrire graphiquement avec justesse et savoir-faire. Plus
-                que créer du beau, nous nous attachons à créer du sens, un
-                concept, un environnement, une histoire pour chacun de nos
-                clients... </p>
-              <a href="#contact">Demandez un devis gratuitement</a>
-              <div class="uk-margin-medium-top" uk-lightbox>
-                <a class="uk-button uk-button-default" href="img/wemade/untorne.png" data-caption="untdorne.fr"
-                  data-alt="Image">Exemples
-                  d'identitées visuelles réalisées</a>
-                <a href="img/nb-kinesio.png" data-caption="nb-kinesio.fr"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-          uk-grid>
-          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-            <img src="img/activities/computer.jpg" alt="Réparation de matériel informatique" uk-cover>
-            <canvas width="600" height="400"></canvas>
-          </div>
-          <div>
-            <div class="uk-card-body">
-              <h3 class="uk-card-title">Maintenance informatique à domicile</h3>
-              <p>Votre ordinateur est en panne ?</p>
-              <p>Un problème avec votre ordinateur ? Nos experts pourront résoudre
-                votre problème rapidement et à moindre coût. Cela peut aller d'un
-                pc qui bug au montage d'une machine sur-mesure. Vous pouvez même
-                envoyer votre ordinateur/objet à réparer directement par Laposte !
-                Il est aussi possible de l'ammener directement au siège de
-                l'entreprise.</p>
-              <a href="#contact">Demandez un devis gratuitement</a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-          uk-grid>
-          <div class="uk-card-media-left uk-cover-container">
-            <img src="img/activities/server.jpg" alt="Gestion et infogérence d'infrastructure" uk-cover>
-            <canvas width="600" height="400"></canvas>
-          </div>
-          <div>
-            <div class="uk-card-body">
-              <h3 class="uk-card-title">Gestion d'infrastructure réseau</h3>
-              <p>Vous n'avez pas envie de vous occuper de la mise en production de
-                votre site web ?</p>
-              <p>Vous avez besoin d'un machine ? D'une mise en production d'un
-                site web ? Et vous n'avez pas envie de vous occuper de tout ça ?
-                Laissez faire, nous pouvons vous mettre une machine à votre
-                disposition et en assurer la fiabilité. Vous pouvez directement
-                nous donner votre site web, et nous nous occupons de la création
-                du nom de domaine, de toute la gestion à votre place !</p>
-              <a href="#contact">Demandez un devis gratuitement</a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-          uk-grid>
-          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-            <img src="img/activities/electronic.jpg" alt="Conception et dessin de matériel électronique" uk-cover>
-            <canvas width="600" height="400"></canvas>
-          </div>
-          <div>
-            <div class="uk-card-body">
-              <h3 class="uk-card-title">Création électronique</h3>
-              <p>Mettez au jour vos idées !</p>
-              <p>Vous avez un projet nécessitant des compétences en éléctronique
-                que vous n'avez pas ? Nous pouvons vous créer des PCB sur mesure !
-                Nous proposons une création de A à Z de la PCB, avec prototypage
-                etc</p>
-              <a href="#contact">Demandez un devis gratuitement</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="uk-margin-large-top uk-margin-large-bottom" id="project">
-        <div class="center">
-          <h1 class="uk-text-bold">Nos Projets</h1>
+        <div class="uk-margin-large-top uk-margin-large-bottom" id="project">
+          <div class="center">
+            <h1 class="uk-text-bold">Nos Projets</h1>
 
-          <div class="uk-visible@m">
-            <div class="uk-margin-large-top uk-column-1-2 uk-grid-match">
-              <div class="feature-content  uk-padding-small uk-padding-remove-vertical">
-                <h1 class="uk-text-bold">Projet <span style="color : #FF4C4C;">RETROBOX</span>
-                </h1>
-                <p>Une console, 20 ans de jeux, 35 ans de technologies</p>
-                <p>La RetroBox est une console portative, open-source et DIY, qui
-                  tourne sur RetroPie. Vous pouvez rejouer à tous les jeux de votre
-                  enfance, avec son autonomie de 6 heures vous allez passer des
-                  heures de plaisirs ! </p>
-                <a class="link" href="https://retrobox.tech">
-                  <p>En savoir plus sur le Projet &nbsp; <span style="color : #FF4C4C;">
-                      <i class="fas fa-arrow-circle-right"></i>
-                    </span>
-                  </p>
-                </a>
-                <li class="personnal-icon">
-                  <a style="color: #FF4C4C;" href="https://github.com/retrobox">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a style="color: #FF4C4C;" href="https://twitter.com/RetroBoxSP">
-                    <i class="fa-brands fa-x-twitter"></i>
-                  </a>
-                  <a style="color: #FF4C4C;"
-                    href="https://www.kickstarter.com/projects/thingmill/549296153?ref=34wlle&token=c7f8bbc8">
-                    <i class="fab fa-kickstarter"></i>
-                  </a>
-                  <a style="color: #FF4C4C;" href="https://discord.gg/TzNNQnP">
-                    <i class="fab fa-discord"></i>
-                  </a>
-                  <a style="color: #FF4C4C;" href="https://retrobox.tech/fr/">
-                    <i class="fas fa-globe"></i>
-                  </a>
-                </li>
-              </div>
-              <div class>
-                <img style="background: linear-gradient(180deg, rgba(255,76,76,1) 0%, rgba(0,212,255,0) 100%);"
-                  class="bg-card card-img uk-align-left project" src="img/retrobox.png" alt="La console RetroBox">
-              </div>
-            </div>
-            <div class="uk-margin-large-top uk-column-1-2 uk-grid-match">
-              <div class="feature-content uk-padding-small uk-padding-remove-vertical">
-                <h1 class="uk-text-bold">Projet <span style="color : #FFA44C;">PAGEASSOS</span>
-                </h1>
-                <p>Montrez et partagez vos associations locales !</p>
-                <p>PageAssos est un service permettant aux communes de répertorier
-                  sur un site web toutes leurs associations ! Le principe est assez
-                  simple, un habitant d'une commune ou d'une commune voisine se rend
-                  sur le site web et il peut ainsi facilement trouver toutes les
-                  associations qu'il l'intéresse !</p>
-                <a class="link" href="https://pagesassos.thingmill.fr/">
-                  <p>En savoir plus sur le Projet &nbsp; <span style="color : #FFA44C;">
-                      <i class="fas fa-arrow-circle-right"></i>
-                    </span>
-                  </p>
-                </a>
-                <li class="personnal-icon">
-                  <a style="color: #FFA44C;" href="https://discord.gg/TzNNQnP">
-                    <i class="fab fa-discord"></i>
-                  </a>
-                  <a style="color: #FFA44C;" href="https://pagesassos.thingmill.fr/">
-                    <i class="fas fa-globe"></i>
-                  </a>
-                </li>
-              </div>
-              <div class>
-                <img style="background: linear-gradient(180deg, rgba(255,164,76,1) 0%, rgba(0,212,255,0) 100%);"
-                  class="bg-card card-img uk-align-left project" src="img/LogoPageAssosByThingmill.png" alt="Logo du service PageAssos">
-              </div>
-            </div>
-          </div>
-          <div class="uk-hidden@m uk-margin-large-top">
-            <!-- Card for RETROBOX -->
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1 uk-margin uk-card-secondary"
-              uk-grid>
-              <div class="uk-card-media-top">
-                <img src="img/retrobox.png" alt="La console RetroBox">
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title-mobile" style="color : #FF4C4C;">Projet RETROBOX</h3>
-                <div class="text-card-mobile">
+            <div class="uk-visible@m">
+              <div class="uk-margin-large-top uk-column-1-2 uk-grid-match">
+                <div
+                  class="feature-content  uk-padding-small uk-padding-remove-vertical">
+                  <h1 class="uk-text-bold">Projet <span
+                      style="color : #FF4C4C;">RETROBOX</span>
+                  </h1>
                   <p>Une console, 20 ans de jeux, 35 ans de technologies</p>
-                  <p>La RetroBox est une console portative, open-source et DIY, qui tourne sur RetroPie. Vous pouvez
-                    rejouer à tous les jeux de votre enfance, avec son autonomie de 6 heures vous allez passer des
-                    heures
-                    de plaisirs !</p>
-                  <a href="https://retrobox.tech">En savoir plus sur le Projet <i
-                      class="fas fa-arrow-circle-right"></i></a>
+                  <p>La RetroBox est une console portative, open-source et DIY,
+                    qui
+                    tourne sur RetroPie. Vous pouvez rejouer à tous les jeux de
+                    votre
+                    enfance, avec son autonomie de 6 heures vous allez passer
+                    des
+                    heures de plaisirs ! </p>
+                  <a class="link" href="https://retrobox.tech">
+                    <p>En savoir plus sur le Projet &nbsp; <span
+                        style="color : #FF4C4C;">
+                        <i class="fas fa-arrow-circle-right"></i>
+                      </span>
+                    </p>
+                  </a>
+                  <li class="personnal-icon">
+                    <a style="color: #FF4C4C;"
+                      href="https://github.com/retrobox">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a style="color: #FF4C4C;"
+                      href="https://twitter.com/RetroBoxSP">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a style="color: #FF4C4C;"
+                      href="https://www.kickstarter.com/projects/thingmill/549296153?ref=34wlle&token=c7f8bbc8">
+                      <i class="fab fa-kickstarter"></i>
+                    </a>
+                    <a style="color: #FF4C4C;"
+                      href="https://discord.gg/TzNNQnP">
+                      <i class="fab fa-discord"></i>
+                    </a>
+                    <a style="color: #FF4C4C;" href="https://retrobox.tech/fr/">
+                      <i class="fas fa-globe"></i>
+                    </a>
+                  </li>
+                </div>
+                <div class>
+                  <img
+                    style="background: linear-gradient(180deg, rgba(255,76,76,1) 0%, rgba(0,212,255,0) 100%);"
+                    class="bg-card card-img uk-align-left project"
+                    src="img/retrobox.png" alt="La console RetroBox">
                 </div>
               </div>
-            </div>
-            <!-- Card for PAGEASSOS -->
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1 uk-margin uk-card-secondary"
-              uk-grid>
-              <div class="uk-card-media-top">
-                <img src="img/LogoPageAssosByThingmill.png" alt="Logo du service PageAssos">
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title-mobile" style="color : #FFA44C;">PAGEASSOS</h3>
-                <div class="text-card-mobile">
+              <div class="uk-margin-large-top uk-column-1-2 uk-grid-match">
+                <div
+                  class="feature-content uk-padding-small uk-padding-remove-vertical">
+                  <h1 class="uk-text-bold">Projet <span
+                      style="color : #FFA44C;">PAGEASSOS</span>
+                  </h1>
                   <p>Montrez et partagez vos associations locales !</p>
-                  <p>PageAssos est un service permettant aux communes de répertorier
-                    sur un site web toutes leurs associations ! Le principe est assez
-                    simple, un habitant d'une commune ou d'une commune voisine se rend
-                    sur le site web et il peut ainsi facilement trouver toutes les
+                  <p>PageAssos est un service permettant aux communes de
+                    répertorier
+                    sur un site web toutes leurs associations ! Le principe est
+                    assez
+                    simple, un habitant d'une commune ou d'une commune voisine
+                    se rend
+                    sur le site web et il peut ainsi facilement trouver toutes
+                    les
                     associations qu'il l'intéresse !</p>
-                  <a href="https://pagesassos.thingmill.fr/">En savoir plus sur le Projet <i
-                      class="fas fa-arrow-circle-right"></i></a>
+                  <a class="link" href="https://pagesassos.thingmill.fr/">
+                    <p>En savoir plus sur le Projet &nbsp; <span
+                        style="color : #FFA44C;">
+                        <i class="fas fa-arrow-circle-right"></i>
+                      </span>
+                    </p>
+                  </a>
+                  <li class="personnal-icon">
+                    <a style="color: #FFA44C;"
+                      href="https://discord.gg/TzNNQnP">
+                      <i class="fab fa-discord"></i>
+                    </a>
+                    <a style="color: #FFA44C;"
+                      href="https://pagesassos.thingmill.fr/">
+                      <i class="fas fa-globe"></i>
+                    </a>
+                  </li>
+                </div>
+                <div class>
+                  <img
+                    style="background: linear-gradient(180deg, rgba(255,164,76,1) 0%, rgba(0,212,255,0) 100%);"
+                    class="bg-card card-img uk-align-left project"
+                    src="img/LogoPageAssosByThingmill.png"
+                    alt="Logo du service PageAssos">
+                </div>
+              </div>
+            </div>
+            <div class="uk-hidden@m uk-margin-large-top">
+              <!-- Card for RETROBOX -->
+              <div
+                class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1 uk-margin uk-card-secondary"
+                uk-grid>
+                <div class="uk-card-media-top">
+                  <img src="img/retrobox.png" alt="La console RetroBox">
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title-mobile"
+                    style="color : #FF4C4C;">Projet RETROBOX</h3>
+                  <div class="text-card-mobile">
+                    <p>Une console, 20 ans de jeux, 35 ans de technologies</p>
+                    <p>La RetroBox est une console portative, open-source et
+                      DIY, qui tourne sur RetroPie. Vous pouvez
+                      rejouer à tous les jeux de votre enfance, avec son
+                      autonomie de 6 heures vous allez passer des
+                      heures
+                      de plaisirs !</p>
+                    <a href="https://retrobox.tech">En savoir plus sur le Projet
+                      <i
+                        class="fas fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card for PAGEASSOS -->
+              <div
+                class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1 uk-margin uk-card-secondary"
+                uk-grid>
+                <div class="uk-card-media-top">
+                  <img src="img/LogoPageAssosByThingmill.png"
+                    alt="Logo du service PageAssos">
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title-mobile"
+                    style="color : #FFA44C;">PAGEASSOS</h3>
+                  <div class="text-card-mobile">
+                    <p>Montrez et partagez vos associations locales !</p>
+                    <p>PageAssos est un service permettant aux communes de
+                      répertorier
+                      sur un site web toutes leurs associations ! Le principe
+                      est assez
+                      simple, un habitant d'une commune ou d'une commune voisine
+                      se rend
+                      sur le site web et il peut ainsi facilement trouver toutes
+                      les
+                      associations qu'il l'intéresse !</p>
+                    <a href="https://pagesassos.thingmill.fr/">En savoir plus
+                      sur le Projet <i
+                        class="fas fa-arrow-circle-right"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="uk-margin-large-top" id="contact">
-        <div class="container center">
-          <h1 class="uk-text-bold">Nous Contacter</h1>
-        </div>
-        <div class="container">
-          <div class="uk-margin-large-top card uk-child-width-1-4@s uk-height-match socials" uk-grid>
-            <div>
-              <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-card-primary uk-height-medium">
-                <i class="fas fa-phone icon"></i>
-                <h3 class="uk-card-title">Par Téléphone</h3>
-                <button class="uk-button uk-button-default uk-text-bold"
-                  onclick="window.location.href = 'tel:+33769997549';">+33 7 69 99
-                  75 49</button>
-              </div>
-            </div>
-            <div>
-              <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-card-secondary uk-height-medium">
-                <i class="fa-brands fa-x-twitter icon"></i>
-                <h3 class="uk-card-title">Par Twitter</h3>
-                <button class="uk-button uk-button-default uk-text-bold"
-                  onclick="window.location.href = 'https://twitter.com/Thingmill_Corp';">@Thingmill_Corp</button>
-              </div>
-            </div>
-            <div>
-              <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-card-primary uk-height-medium">
-                <i class="fas fa-envelope icon-alternative"></i>
-                <h3 class="uk-card-title">Par Email</h3>
-                <button class="uk-button uk-button-default uk-text-bold"
-                  onclick="window.location.href = 'mailto:contact@thingmill.fr';">contact@thingmill.fr</button>
-              </div>
-            </div>
-            <div>
-              <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-card-secondary uk-height-medium">
-                <i class="fab fa-discord icon"></i>
-                <h3 class="uk-card-title">Par Discord</h3>
-                <button class="uk-button uk-button-default uk-text-bold"
-                  onclick="window.location.href = 'https://discord.com/invite/TzNNQnP';">Nous
-                  rejoindre</button>
-              </div>
-            </div>
+        <div class="uk-margin-large-top" id="contact">
+          <div class="container center">
+            <h1 class="uk-text-bold">Nous Contacter</h1>
           </div>
-          <form action="/contact" method="POST" class="uk-grid-small uk-margin-large-top" uk-grid id="contact-form">
-            <legend class="uk-legend uk-heading-divider">Formulaire de
-              contact</legend>
-            <div class="uk-width-1-2@s">
-              <label class="uk-form-label" for="name">Nom</label>
-              <input class="uk-input" name="name" id="name" required type="text">
-            </div>
-            <div class="uk-width-1-2@s">
-              <label class="uk-form-label" for="email">Adresse Mail</label>
-              <input class="uk-input" name="email" id="email" required type="email">
-            </div>
-            <div class="uk-width-1-1@s">
-              <label class="uk-form-label" for="form-stacked-select">Objet</label>
-              <select class="uk-select" name="subject" id="form-stacked-select" required>
-                <option value="Demande de devis">Demande de devis</option>
-                <option value="Achat d'une licence PageAssos">Achat d'une licence
-                  PageAssos</option>
-                <option value="Renseignements sur nos services proposés">Renseignements
-                  sur nos services proposés</option>
-                <option value="Autre">Autre</option>
-              </select>
-            </div>
-            <div class="uk-width-1-1@s">
-              <label class="uk-form-label" for="message">Message</label>
-              <textarea class="uk-textarea" name="message" id="message" required rows="5"></textarea>
-            </div>
-            <input type="hidden" name="recaptcha" id="recaptcha-response">
-            <div class="uk-width-1-1@s">
-              <div class="g-recaptcha" data-sitekey="<%= recaptchaKey %>" data-callback="reCaptchaCallback">
+          <div class="container">
+            <div
+              class="uk-margin-large-top card uk-child-width-1-4@s uk-height-match socials"
+              uk-grid>
+              <div>
+                <div
+                  class="uk-card uk-card-default uk-card-hover uk-card-body uk-card-primary uk-height-medium">
+                  <i class="fas fa-phone icon"></i>
+                  <h3 class="uk-card-title">Par Téléphone</h3>
+                  <button class="uk-button uk-button-default uk-text-bold"
+                    onclick="window.location.href = 'tel:+33769997549';">+33 7
+                    69 99
+                    75 49</button>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="uk-card uk-card-default uk-card-hover uk-card-body uk-card-secondary uk-height-medium">
+                  <i class="fa-brands fa-x-twitter icon"></i>
+                  <h3 class="uk-card-title">Par Twitter</h3>
+                  <button class="uk-button uk-button-default uk-text-bold"
+                    onclick="window.location.href = 'https://twitter.com/Thingmill_Corp';">@Thingmill_Corp</button>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="uk-card uk-card-default uk-card-hover uk-card-body uk-card-primary uk-height-medium">
+                  <i class="fas fa-envelope icon-alternative"></i>
+                  <h3 class="uk-card-title">Par Email</h3>
+                  <button class="uk-button uk-button-default uk-text-bold"
+                    onclick="window.location.href = 'mailto:contact@thingmill.fr';">contact@thingmill.fr</button>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="uk-card uk-card-default uk-card-hover uk-card-body uk-card-secondary uk-height-medium">
+                  <i class="fab fa-discord icon"></i>
+                  <h3 class="uk-card-title">Par Discord</h3>
+                  <button class="uk-button uk-button-default uk-text-bold"
+                    onclick="window.location.href = 'https://discord.com/invite/TzNNQnP';">Nous
+                    rejoindre</button>
+                </div>
               </div>
             </div>
-            <div class="uk-child-width-1-1@s">
-              <% if (messages.error) { %>
+            <form action="/contact" method="POST"
+              class="uk-grid-small uk-margin-large-top" uk-grid
+              id="contact-form">
+              <legend class="uk-legend uk-heading-divider">Formulaire de
+                contact</legend>
+              <div class="uk-width-1-2@s">
+                <label class="uk-form-label" for="name">Nom</label>
+                <input class="uk-input" name="name" id="name" required
+                  type="text">
+              </div>
+              <div class="uk-width-1-2@s">
+                <label class="uk-form-label" for="email">Adresse Mail</label>
+                <input class="uk-input" name="email" id="email" required
+                  type="email">
+              </div>
+              <div class="uk-width-1-1@s">
+                <label class="uk-form-label"
+                  for="form-stacked-select">Objet</label>
+                <select class="uk-select" name="subject"
+                  id="form-stacked-select" required>
+                  <option value="Demande de devis">Demande de devis</option>
+                  <option value="Achat d'une licence PageAssos">Achat d'une
+                    licence
+                    PageAssos</option>
+                  <option
+                    value="Renseignements sur nos services proposés">Renseignements
+                    sur nos services proposés</option>
+                  <option value="Autre">Autre</option>
+                </select>
+              </div>
+              <div class="uk-width-1-1@s">
+                <label class="uk-form-label" for="message">Message</label>
+                <textarea class="uk-textarea" name="message" id="message"
+                  required rows="5"></textarea>
+              </div>
+              <input type="hidden" name="recaptcha" id="recaptcha-response">
+              <div class="uk-width-1-1@s">
+                <div class="g-recaptcha" data-sitekey="<%= recaptchaKey %>"
+                  data-callback="reCaptchaCallback">
+                </div>
+              </div>
+              <div class="uk-child-width-1-1@s">
+                <% if (messages.error) { %>
                 <div class="uk-alert-danger" uk-alert>
                   <a class="uk-alert-close" uk-close></a>
                   <p>
@@ -472,20 +582,25 @@
                   </p>
                 </div>
                 <% } %>
-                  <% if (messages.success) { %>
-                    <div class="uk-alert-success" uk-alert>
-                      <a class="uk-alert-close" uk-close></a>
-                      <p>
-                        <%= messages.success %>
-                      </p>
-                    </div>
-                    <% } %>
-                      <button class="uk-button uk-button-default uk-text-bold" type="submit">Envoyer</button>
-            </div>
-          </form>
+                <% if (messages.success) { %>
+                <div class="uk-alert-success" uk-alert>
+                  <a class="uk-alert-close" uk-close></a>
+                  <p>
+                    <%= messages.success %>
+                  </p>
+                </div>
+                <% } %>
+                <button class="uk-button uk-button-default uk-text-bold"
+                  type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <!--FOOTER-->
-  <%- include('footer') %>
+    </main>
+    <!--FOOTER-->
+    <footer>
+      <%- include('partials/footer') %>
+    </footer>
+  </body>
+</html>

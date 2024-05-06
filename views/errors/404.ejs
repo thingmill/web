@@ -1,22 +1,36 @@
-<%- include('../header') %>
-<main>
-   <div class="uk-container uk-margin-xlarge-top uk-text-center uk-flex uk-flex-center uk-flex-middle uk-flex-column">
-      <h1>Oh non...</h1>
-      <img src="../img/404.gif" alt="Page Not Found"
-         class="uk-margin-auto uk-animation-fade"
-         style="max-width:500px;">
-      <h2>La page que vous cherchez n'existe pas</h2>
-      <div class="uk-margin-bottom">
-         <p><b>Cela peut être dû à :</b></p>
-         <ul class="uk-list uk-list-bullet">
-            <li>La page est en construction</li>
-            <li>La page n'existe pas</li>
-            <li>La page est introuvable</li>
-            <li>Bug interne du site</li>
-         </ul>
-         <p>Contactez-nous : <a href="mailto:contact@thingmill.fr"
-               class="uk-link-reset">contact@thingmill.fr</a></p>
-      </div>
-   </div>
-</main>
-<%- include('../footer') %>
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <%- include('../partials/head') %>
+   </head>
+   <body>
+      <header>
+         <%- include('../partials/header') %>
+      </header>
+      <main>
+         <div
+            class="uk-container uk-margin-xlarge-top uk-text-center uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+            <h1>Oh non...</h1>
+            <img src="../img/404.gif" alt="Page Not Found"
+               class="uk-margin-auto uk-animation-fade"
+               style="max-width:500px;">
+            <h2>La page que vous cherchez n'existe pas</h2>
+            <div class="uk-margin-bottom">
+               <p><b>Cela peut être dû à :</b></p>
+               <ul class="uk-list uk-list-bullet">
+                  <li>La page est en construction</li>
+                  <li>La page n'existe pas</li>
+                  <li>La page est introuvable</li>
+                  <li>Bug interne du site</li>
+               </ul>
+               <p>Contactez-nous : <a href="mailto:contact@thingmill.fr"
+                     class="uk-link-reset">contact@thingmill.fr</a></p>
+            </div>
+         </div>
+      </main>
+      <!--FOOTER-->
+      <footer>
+         <%- include('../partials/footer') %>
+      </footer>
+   </body>
+</html>

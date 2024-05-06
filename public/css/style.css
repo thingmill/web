@@ -98,8 +98,6 @@ main {
   text-align: center;
 }
 
-
-
 .superposition img:nth-child(1) {
   position: absolute;
   right: 25px;
@@ -143,6 +141,14 @@ a:hover, a:focus {
 .cover-title {
   margin-top : 8em;
   font-size: 1.3em;
+}
+
+/* FOR MAC USER */
+@media screen and (max-width: 1468px) {
+  .cover-title {
+    margin-top: 2em;
+    font-size: 1.3em;
+  }
 }
 
 .cover-subtitle {

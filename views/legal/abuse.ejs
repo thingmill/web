@@ -1,68 +1,113 @@
-<%- include('../header') %>
-<main>
-    <div class="uk-container uk-margin-xlarge-top" id="abuse">
-        <h1 class="uk-heading-divider">Reporter un abus</h1>
-        <div class="uk-grid">
-            <form id="contact-form" class="uk-form-stacked" role="form" method="POST" action="/abuse_contact" uk-grid>
-                <div class="uk-width-1-1">
-                    <label class="uk-form-label" for="contact_email">Votre adresse mail <span class="required">*</span></label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="contact_email" name="email" type="email" placeholder="Votre email" required minlength="4" maxlength="200">
-                    </div>
-                </div>
-                
-                <div class="uk-width-1-1">
-                    <label class="uk-form-label" for="abuse_type">Quel type de rapport voulez-vous faire ? <span class="required">*</span></label>
-                    <div class="uk-form-controls">
-                        <select class="uk-select" id="abuse_type" name="abuse" required>
-                            <option value="" disabled selected>Sélectionnez...</option>
-                            <option value="copyright">Copyright</option>
-                            <option value="contrefacon">Contrefaçon</option>
-                            <option value="pascool">Anti-sémitisme, pornographie, racisme, incitation à la haine, terrorisme</option>
-                            <option value="other">Autre</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div class="uk-width-1-1">
-                    <label class="uk-form-label" for="inputurl">Entrez les url(s) en question <span class="required">*</span></label>
-                    <div class="uk-form-controls">
-                        <textarea class="uk-textarea" id="inputurl" name="urls" placeholder="Entrez les url(s) en question (Une par ligne)" rows="2" required minlength="3" maxlength="200"></textarea>
-                    </div>
-                </div>
-                
-                <div class="uk-width-1-1">
-                    <label class="uk-form-label" for="contact_message">Décrivez la raison de votre rapport <span class="required">*</span></label>
-                    <div class="uk-form-controls">
-                        <textarea class="uk-textarea" id="contact_message" name="message" placeholder="Décrivez la raison de votre rapport" rows="3" required minlength="15" maxlength="500"></textarea>
-                    </div>
-                </div>
-                
-                <div class="uk-width-1-1 uk-margin">
-                    <div class="g-recaptcha" data-sitekey="<%= recaptchaKey %>" data-callback="reCaptchaCallback"></div>
-                    <input type="hidden" name="recaptcha" id="recaptcha-response">
-                    <p class="uk-margin-remove-top">En cliquant sur 'Envoyer', vous nous autorisez à stocker et utiliser vos données personnelles au sein de Thingmill.</p>
-                </div>
-                
-                <div class="uk-width-1-1">
-                    <button class="uk-button uk-button-primary" type="submit">Envoyez le rapport</button>
-                </div>
-                
-                <% if (messages.error) { %>
-                    <div class="uk-alert-danger" uk-alert>
-                        <a class="uk-alert-close" uk-close></a>
-                        <p><%= messages.error %></p>
-                    </div>
-                <% } %>
-                <% if (messages.success) { %>
-                    <div class="uk-alert-success" uk-alert>
-                        <a class="uk-alert-close" uk-close></a>
-                        <p><%= messages.success %></p>
-                    </div>
-                <% } %>
-            </form>
-        </div>
-    </div>
-</main>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <%- include('../partials/head') %>
+    </head>
+    <body>
+        <header>
+            <%- include('../partials/header') %>
+        </header>
+        <main>
+            <div class="uk-container uk-margin-xlarge-top" id="abuse">
+                <h1 class="uk-heading-divider">Reporter un abus</h1>
+                <div class="uk-grid">
+                    <form id="contact-form" class="uk-form-stacked" role="form"
+                        method="POST" action="/abuse_contact" uk-grid>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label"
+                                for="contact_email">Votre adresse mail <span
+                                    class="required">*</span></label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="contact_email"
+                                    name="email" type="email"
+                                    placeholder="Votre email" required
+                                    minlength="4" maxlength="200">
+                            </div>
+                        </div>
 
-<%- include('../footer') %>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label" for="abuse_type">Quel
+                                type de rapport voulez-vous faire ? <span
+                                    class="required">*</span></label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="abuse_type"
+                                    name="abuse" required>
+                                    <option value disabled
+                                        selected>Sélectionnez...</option>
+                                    <option value="copyright">Copyright</option>
+                                    <option
+                                        value="contrefacon">Contrefaçon</option>
+                                    <option value="pascool">Anti-sémitisme,
+                                        pornographie, racisme, incitation à la
+                                        haine, terrorisme</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label" for="inputurl">Entrez
+                                les url(s) en question <span
+                                    class="required">*</span></label>
+                            <div class="uk-form-controls">
+                                <textarea class="uk-textarea" id="inputurl"
+                                    name="urls"
+                                    placeholder="Entrez les url(s) en question (Une par ligne)"
+                                    rows="2" required minlength="3"
+                                    maxlength="200"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label"
+                                for="contact_message">Décrivez la raison de
+                                votre rapport <span
+                                    class="required">*</span></label>
+                            <div class="uk-form-controls">
+                                <textarea class="uk-textarea"
+                                    id="contact_message" name="message"
+                                    placeholder="Décrivez la raison de votre rapport"
+                                    rows="3" required minlength="15"
+                                    maxlength="500"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-margin">
+                            <div class="g-recaptcha"
+                                data-sitekey="<%= recaptchaKey %>"
+                                data-callback="reCaptchaCallback"></div>
+                            <input type="hidden" name="recaptcha"
+                                id="recaptcha-response">
+                            <p class="uk-margin-remove-top">En cliquant sur
+                                'Envoyer', vous nous autorisez à stocker et
+                                utiliser vos données personnelles au sein de
+                                Thingmill.</p>
+                        </div>
+
+                        <div class="uk-width-1-1">
+                            <button class="uk-button uk-button-primary"
+                                type="submit">Envoyez le rapport</button>
+                        </div>
+
+                        <% if (messages.error) { %>
+                        <div class="uk-alert-danger" uk-alert>
+                            <a class="uk-alert-close" uk-close></a>
+                            <p><%= messages.error %></p>
+                        </div>
+                        <% } %>
+                        <% if (messages.success) { %>
+                        <div class="uk-alert-success" uk-alert>
+                            <a class="uk-alert-close" uk-close></a>
+                            <p><%= messages.success %></p>
+                        </div>
+                        <% } %>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <%- include('../partials/footer') %>
+        </footer>
+    </body>
+</html>
