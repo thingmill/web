@@ -35,13 +35,8 @@ main {
   padding-bottom: 2.2em;
 }
 
-
 .uk-navbar-container, .navbar {
   background: linear-gradient(105.2deg, #3A6186 0%, #89253E 99.29%);
-}
-
-.uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
-  padding: 0 15px;
 }
 
 .min-logo, .mobile-logo {
@@ -154,7 +149,6 @@ a:hover, a:focus {
   font-size: 1.2em;
 }
 
-
 .feature-content {
   vertical-align: middle;
   text-align: right;
@@ -232,8 +226,38 @@ a:hover, a:focus {
 }
 
 @media all and (max-width: 599px) {
+
+  .text-card-mobile {
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .uk-heading-divider {
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+  }
+
+  .titre {
+    font-size: 9vh;
+    padding: auto;
+    margin: auto;
+  }
+
+  .uk-card-title-mobile {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .bg-card {
+    display: none !important;
+  }
+
   .head-navbar, .main-navbar {
     display: none;
+  }
+
+  .button-header {
+    margin-top: 1em;
   }
   
   .team {
