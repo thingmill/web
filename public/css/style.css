@@ -98,12 +98,6 @@ main {
   text-align: center;
 }
 
-.superposition img:nth-child(1) {
-  position: absolute;
-  right: 25px;
-  top: 80px;
-}
-
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
@@ -143,13 +137,7 @@ a:hover, a:focus {
   font-size: 1.3em;
 }
 
-/* FOR MAC USER */
-@media screen and (max-width: 1468px) {
-  .cover-title {
-    margin-top: 2em;
-    font-size: 1.3em;
-  }
-}
+
 
 .cover-subtitle {
   font-size: 1.2em;
@@ -231,6 +219,24 @@ a:hover, a:focus {
   border-color: #c3e6cb;
 }
 
+/* FOR MAC USER */
+@media all and (max-width: 1468px) {
+  .cover-title {
+    margin-top: 2em;
+    font-size: 1.3em;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .uk-navbar-right > li:nth-child(1) > a:nth-child(1) {
+    padding-right: 0;
+  }
+
+  .uk-navbar-toggle {
+    margin: 0;
+  }
+}
+
 @media all and (max-width: 599px) {
 
   .text-card-mobile {
@@ -285,7 +291,6 @@ a:hover, a:focus {
   }
 }
 
-/* Pour les navigateurs basés sur WebKit comme Chrome, Safari et Edge */
 ::-webkit-scrollbar {
   width: 15px;
 }
