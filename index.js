@@ -37,11 +37,38 @@ let port = process.env.PORT == undefined ? 3000 : process.env.PORT
 app.set('view engine', 'ejs')
 app.use(express.static('public'));
 
+const startYear = 2018;
+
+app.use((req, res, next) => {
+    res.locals.startYear = startYear;
+    res.locals.currentYear = new Date().getFullYear();
+    next();
+});
+
 app.get('/', function (req, res) {
+
+    function getAgeFromDate(year, month, day) {
+        const today = new Date();
+        const birthDate = new Date(year, month - 1, day); // mois 0-indexé
+
+        let age = today.getFullYear() - birthDate.getFullYear();
+
+        const hasBirthdayPassed =
+            today.getMonth() > birthDate.getMonth() ||
+            (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+
+        if (!hasBirthdayPassed) {
+            age--;
+        }
+
+        return age;
+    }
+
     res.render('index', {
         recaptchaKey: process.env.RECAPTCHA_PUBLIC,
         recaptcha: '',
-        messages: req.flash()
+        messages: req.flash(),
+        getAge: getAgeFromDate,
     });
 });
 

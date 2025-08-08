@@ -5,7 +5,14 @@
         <a href="https://thingmill.fr">
           <img src="/img/thingmill_logo_white.png" class="logo-footer" alt="Logo Thingmill" style="max-height: 50px;">
         </a>
-        <p>© Thingmill 2024 - RCS 890 687 601 Alençon</p>
+        <p>
+          © Thingmill 
+          <% if (startYear === currentYear) { %>
+            <%= currentYear %>
+          <% } else { %>
+            <%= startYear %>–<%= currentYear %>
+          <% } %> - RCS 890 687 601 Alençon
+        </p>
       </div>
       <div class="uk-width-auto">
         <ul class="uk-list uk-list-divider">

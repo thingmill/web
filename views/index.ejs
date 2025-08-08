@@ -36,7 +36,7 @@
                 class="bg-card card-img uk-align-left" src="img/img-2.jpg"
                 alt="Soudure de la RetroBox">
               <img style="margin-left: -2em; margin-top: 3em;"
-                class="bg-card card-img uk-align-left" src="img/img-3.png"
+                class="bg-card card-img uk-align-left" src="img/img-3.jpg"
                 alt="L'équipe qui code">
             </div>
           </div>
@@ -50,10 +50,7 @@
             <h1 class="uk-text-bold">Qui <span class="primary">sommes</span>
               nous ?
             </h1>
-            <p>Thingmill est une entreprise créée par des étudiants en 2018 par
-              Valentin Derouet, Étienne Chevrollier et Matthieu Bessat, trois
-              amis
-              qui travaille ensemble sur leur temps libre.</p>
+            <p>Fondée en 2018 par trois étudiants en ingénierie, Thingmill est une entreprise indépendante née de la volonté de concevoir, expérimenter et proposer des solutions techniques innovantes. Portés par une passion commune pour l'électronique, le développement logiciel et les systèmes embarqués, nous mettons à profit notre temps libre, en parallèle de nos études, pour développer des projets sur mesure dans des domaines variés allant de la conception de circuits imprimés à la création d'applications web techniques et à la gestion d’infrastructures informatiques.</p>
           </div>
         </div>
         <div class="uk-margin-large-top degrade right">
@@ -61,20 +58,14 @@
             <h1 class="uk-text-bold">Que <span class="primary">faisons</span>
               nous ?
             </h1>
-            <p>Nous inventons, nous créons et nous vendons. Notre but est de
-              créer
-              des objets ou des services jamais vu et qui rendent services. Nous
-              proposons de l'infogérence pour des TPE/PME et de l'hébergement
-              web
-              sur une infrastructure dédiée entièrement administrée par
-              Thingmill.</p>
+            <p>Nous concevons des solutions techniques sur mesure, qu’il s’agisse d’objets électroniques, d’applications métiers ou de services d’infrastructure. Notre objectif est de répondre à des besoins concrets par l’innovation, en combinant conception, développement et déploiement. Nous proposons notamment de l’infogérance pour TPE/PME ainsi que de l’hébergement web sur une infrastructure sécurisée, entièrement administrée par Thingmill.</p>
           </div>
         </div>
         <div class="uk-margin-large-top uk-margin-large-bottom" id="team">
           <div class="container center">
             <h1 class="uk-text-bold">Notre Équipe</h1>
           </div>
-          <div class="uk-child-width-1-3@m uk-margin-large-top team" uk-grid>
+          <div class="uk-child-width-1-2@m uk-margin-large-top team" uk-grid>
             <div>
               <div class="uk-card uk-card-default">
                 <div class="uk-card-media-top">
@@ -82,7 +73,7 @@
                 </div>
                 <div class="uk-card-body">
                   <h3 class="uk-card-title">Valentin Derouet</h3>
-                  <p>22 ans, admin sys et réseaux, concepteur électronique</p>
+                  <p><%= getAge(2002, 4, 15) %> ans, ingénieur télécoms, conception électronique embarquée (EDA/CAD)</p>
                   <li class="personnal-icon">
                     <a href="https://www.linkedin.com/in/valentin-derouet/">
                       <i class="fab fa-linkedin"></i>
@@ -103,37 +94,11 @@
             <div>
               <div class="uk-card uk-card-default">
                 <div class="uk-card-media-top">
-                  <img src="img/team/etienne.png" alt="Etienne">
-                </div>
-                <div class="uk-card-body">
-                  <h3 class="uk-card-title">Etienne Chevrollier</h3>
-                  <p>21 ans, dev web front-data, infographiste</p>
-                  <li class="personnal-icon">
-                    <a
-                      href="https://www.linkedin.com/in/etienne-chevrollier-493076152/">
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Wabfall">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://twitter.com/EtienneCvr">
-                      <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="https://wabfall.me/">
-                      <i class="fas fa-globe"></i>
-                    </a>
-                  </li>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="uk-card uk-card-default">
-                <div class="uk-card-media-top">
                   <img src="img/team/matthieu.jpg" alt="Matthieu">
                 </div>
                 <div class="uk-card-body">
                   <h3 class="uk-card-title">Matthieu Bessat</h3>
-                  <p>21 ans, dev web full-stack, front-end et back-end</p>
+                  <p><%= getAge(2002, 10, 17) %> ans, dev web full-stack (PHP, Symfony, Python, Node.js et Nuxt/Vue), front-end et back-end</p>
                   <li class="personnal-icon">
                     <a href="https://github.com/lefuturiste">
                       <i class="fab fa-github"></i>
@@ -158,178 +123,72 @@
           <div class="container center">
             <h1 class="uk-text-bold">Nos Services</h1>
           </div>
-          <div
-            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-            uk-grid>
+
+          <!-- Hébergement et apps web pour associations -->
+          <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right" uk-grid>
             <div class="uk-card-media-left uk-cover-container">
-              <img src="img/activities/website.jpg"
-                alt="Site d'exemple pour de la refonte" uk-cover>
+              <img src="img/activities/website.jpg" alt="Hébergement web pour associations" uk-cover>
               <canvas width="600" height="400"></canvas>
             </div>
             <div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">Refonte & création de sites web</h3>
-                <p>Le site web parfait pour votre marque</p>
-                <p>Vous avez besoin d'être présent sur Internet ? Nous sommes là
-                  pour vous, le web est notre passion ! Du site vitrine en
-                  passant
-                  au site e-commerce au dashboard, nous vous apportons une
-                  solution
-                  sur-mesure et adaptée à chaque projet de création de site
-                  Internet.</p>
-                <a href="#contact">Demandez un devis gratuitement</a>
-                <div class="uk-margin-medium-top" uk-lightbox>
-                  <a class="uk-button uk-button-default"
-                    href="img/wemade/untdorne.jpg" data-caption="untdorne.fr"
-                    data-alt="Image">Exemples de sites
-                    réalisées</a>
-                  <a href="img/wemade/nb-kinesio.png"
-                    data-caption="nb-kinesio.fr"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-            uk-grid>
-            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-              <img src="img/activities/seo.jpg"
-                alt="Illustration du Search Engine Optimization" uk-cover>
-              <canvas width="600" height="400"></canvas>
-            </div>
-            <div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">SEO - Campagnes publicitaires</h3>
-                <p>Soyez première place sur Google !</p>
-                <p>Comme vous le savez, de nos jours la visibilité numérique est
-                  un
-                  enjeu crucial pour toute société qui cherche à se développer.
-                  Il
-                  est important de disposer de tous les outils pour générer un
-                  maximum de visibilité qualifiée au niveau régional, national
-                  et
-                  international afin d’augmenter de manière significative le
-                  trafic
-                  sur votre site internet, mais aussi d’élargir votre clientèle,
-                  prospects et apporter une image de marque important auprès des
-                  internautes </p>
+                <h3 class="uk-card-title">Applications web & hébergement associatif</h3>
+                <p>Des outils sur-mesure pour les acteurs associatifs</p>
+                <p>Nous développons des applications web techniques dédiées aux besoins spécifiques des associations : gestion d'adhérents, publications, billetterie, communication interne, etc. Le tout hébergé sur notre infrastructure sécurisée et gérée par nos soins.</p>
                 <a href="#contact">Demandez un devis gratuitement</a>
               </div>
             </div>
           </div>
-          <div
-            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-            uk-grid>
+
+          <!-- Gestion d'infrastructure réseau -->
+          <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right" uk-grid>
             <div class="uk-card-media-left uk-cover-container">
-              <img src="img/activities/logo.jpg"
-                alt="Design de logo et de chartre graphique" uk-cover>
+              <img src="img/activities/server.jpg" alt="Gestion d'infrastructure" uk-cover>
               <canvas width="600" height="400"></canvas>
             </div>
             <div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">Identité visuelle & Support
-                  Graphique</h3>
-                <p>Vous ne possédez pas de logo pour votre entreprise ? Trouvez
-                  le
-                  votre ici !</p>
-                <p>Concevoir une identité visuelle c’est traduire une
-                  personnalité,
-                  un univers, une atmosphère. C’est capter l’essence d’une
-                  marque et
-                  la retranscrire graphiquement avec justesse et savoir-faire.
-                  Plus
-                  que créer du beau, nous nous attachons à créer du sens, un
-                  concept, un environnement, une histoire pour chacun de nos
-                  clients... </p>
-                <a href="#contact">Demandez un devis gratuitement</a>
-                <div class="uk-margin-medium-top" uk-lightbox>
-                  <a class="uk-button uk-button-default"
-                    href="img/wemade/untorne.png" data-caption="untdorne.fr"
-                    data-alt="Image">Exemples
-                    d'identitées visuelles réalisées</a>
-                  <a href="img/nb-kinesio.png" data-caption="nb-kinesio.fr"></a>
-                </div>
+                <h3 class="uk-card-title">Gestion d'infrastructure & supervision</h3>
+                <p>Externalisez votre infrastructure informatique</p>
+                <p>Nous assurons la gestion, la supervision et la maintenance à distance de vos serveurs et applications critiques. Déploiement, monitoring, backups et sécurité sont entièrement pris en charge. Vous vous concentrez sur votre cœur de métier, nous gérons le reste.</p>
+                <a href="#contact">Discutons de vos besoins</a>
               </div>
             </div>
           </div>
-          <div
-            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-            uk-grid>
+
+          <!-- Conception électronique et PCB -->
+          <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right" uk-grid>
             <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-              <img src="img/activities/computer.jpg"
-                alt="Réparation de matériel informatique" uk-cover>
+              <img src="img/activities/electronic.png" alt="Conception électronique EDA / CAD" uk-cover>
               <canvas width="600" height="400"></canvas>
             </div>
             <div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">Maintenance informatique à
-                  domicile</h3>
-                <p>Votre ordinateur est en panne ?</p>
-                <p>Un problème avec votre ordinateur ? Nos experts pourront
-                  résoudre
-                  votre problème rapidement et à moindre coût. Cela peut aller
-                  d'un
-                  pc qui bug au montage d'une machine sur-mesure. Vous pouvez
-                  même
-                  envoyer votre ordinateur/objet à réparer directement par
-                  Laposte !
-                  Il est aussi possible de l'ammener directement au siège de
-                  l'entreprise.</p>
-                <a href="#contact">Demandez un devis gratuitement</a>
+                <h3 class="uk-card-title">Conception électronique (EDA / CAD)</h3>
+                <p>Prototypage et conception de circuits imprimés</p>
+                <p>De l'idée au PCB : nous concevons vos schémas, routons vos circuits et assurons la mise en production avec nos outils EDA/CAD professionnels. Nos services s'adressent aux porteurs de projets, startups industrielles ou domaines spécifiques (audio, IoT, etc.).</p>
+                <a href="#contact">Présentez-nous votre projet</a>
               </div>
             </div>
           </div>
-          <div
-            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-            uk-grid>
+
+          <!-- Développement d'applications techniques personnalisées -->
+          <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right" uk-grid>
             <div class="uk-card-media-left uk-cover-container">
-              <img src="img/activities/server.jpg"
-                alt="Gestion et infogérence d'infrastructure" uk-cover>
+              <img src="img/activities/dbplotter.png" alt="Développement d'applications techniques" uk-cover>
               <canvas width="600" height="400"></canvas>
             </div>
             <div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">Gestion d'infrastructure réseau</h3>
-                <p>Vous n'avez pas envie de vous occuper de la mise en
-                  production de
-                  votre site web ?</p>
-                <p>Vous avez besoin d'un machine ? D'une mise en production d'un
-                  site web ? Et vous n'avez pas envie de vous occuper de tout ça
-                  ?
-                  Laissez faire, nous pouvons vous mettre une machine à votre
-                  disposition et en assurer la fiabilité. Vous pouvez
-                  directement
-                  nous donner votre site web, et nous nous occupons de la
-                  création
-                  du nom de domaine, de toute la gestion à votre place !</p>
-                <a href="#contact">Demandez un devis gratuitement</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large uk-margin-large-left uk-margin-large-right"
-            uk-grid>
-            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-              <img src="img/activities/electronic.jpg"
-                alt="Conception et dessin de matériel électronique" uk-cover>
-              <canvas width="600" height="400"></canvas>
-            </div>
-            <div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">Création électronique</h3>
-                <p>Mettez au jour vos idées !</p>
-                <p>Vous avez un projet nécessitant des compétences en
-                  éléctronique
-                  que vous n'avez pas ? Nous pouvons vous créer des PCB sur
-                  mesure !
-                  Nous proposons une création de A à Z de la PCB, avec
-                  prototypage
-                  etc</p>
-                <a href="#contact">Demandez un devis gratuitement</a>
+                <h3 class="uk-card-title">Développement d'applications techniques</h3>
+                <p>Logiciels sur-mesure pour cas d'usage spécialisés</p>
+                <p>Nous concevons des applications web ou desktop techniques dans des domaines tels que l'acoustique, l'instrumentation, la gestion de capteurs ou la visualisation de données. Chaque application est construite pour répondre à des besoins précis, avec un haut niveau d’ingénierie.</p>
+                <a href="#contact">Expliquez-nous votre besoin</a>
               </div>
             </div>
           </div>
         </div>
+
         <div class="uk-margin-large-top uk-margin-large-bottom" id="project">
           <div class="center">
             <h1 class="uk-text-bold">Nos Projets</h1>
@@ -527,8 +386,7 @@
                   <i class="fab fa-discord icon"></i>
                   <h3 class="uk-card-title">Par Discord</h3>
                   <button class="uk-button uk-button-default uk-text-bold"
-                    onclick="window.location.href = 'https://discord.com/invite/TzNNQnP';">Nous
-                    rejoindre</button>
+                    onclick="window.location.href = 'https://discord.com/invite/TzNNQnP';">  Notre communauté Discord</button>
                 </div>
               </div>
             </div>
